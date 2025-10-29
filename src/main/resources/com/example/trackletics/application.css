@@ -1,0 +1,44 @@
+.text-field {
+    -fx-background-color: white;
+    -fx-background-radius: 7;
+    -fx-border-color: #d7d7d7;
+    -fx-border-radius: 15;
+    -fx-border-width: 1;
+    -fx-padding: 6 10 6 10;
+    -fx-font-size: 14;
+}
+
+.text-field:hover {
+    -fx-border-color: #468EE0;
+}
+
+.primary-button {
+    -fx-border-radius: 10;
+     -fx-background-radius: 10;
+     -fx-background-color: #B075B0;
+     -fx-text-fill: black;
+     -fx-font-weight: bold;
+}
+
+.primary-border {
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-border-color: black;
+
+}
+
+.sign-in-text {
+/* Existing styles, if any */
+
+    /* ADD THE DROPSHADOW EFFECT HERE */
+    -fx-effect: dropshadow(
+        black,                /* Blur Type */
+        rgba(0, 0, 0, 0.7),      /* Shadow Color: Black with 70% opacity */
+        1.5,                     /* Radius: A small radius for sharp text shadow */
+        0,                       /* Spread */
+        10,                       /* Offset X: 1 pixel to the right */
+        10                        /* Offset Y: 1 pixel down */
+    );
+    /* Make the original text WHITE so the dark shadow is visible */
+    -fx-text-fill: black;
+}

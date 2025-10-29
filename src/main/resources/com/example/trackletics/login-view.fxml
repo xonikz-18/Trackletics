@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="554.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trackletics.LoginController">
+
+  <children>
+    <BorderPane prefHeight="554.0" prefWidth="944.0">
+
+      <left>
+        <AnchorPane prefHeight="554.0" prefWidth="660.0" BorderPane.alignment="CENTER">
+
+          <children>
+            <Label layoutX="97.0" layoutY="34.0" prefHeight="38.0" prefWidth="160.0" text="Dentra">
+              <font>
+                <Font name="JetBrains Mono ExtraBold" size="24.0" />
+              </font>
+            </Label>
+
+            <Label layoutX="274.0" layoutY="144.0" text="Welcome Back!">
+              <font>
+                <Font name="System Bold" size="20.0" />
+              </font>
+            </Label>
+
+            <Label layoutX="223.0" layoutY="175.0" text="Please Enter Your Details">
+              <font>
+                <Font name="System Bold" size="20.0" />
+              </font>
+            </Label>
+
+
+            <!-- Input fields -->
+            <TextField layoutX="189.0" layoutY="270.0" prefHeight="45.26" prefWidth="308.0" promptText="Email" />
+            <PasswordField layoutX="189.0" layoutY="327.0" prefHeight="45.26" prefWidth="308.0" promptText="Password" />
+
+            <Button layoutX="272.0" layoutY="387.0" prefHeight="30.18" prefWidth="141.29" style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-background-radius: 8;" text="Login" />
+
+            <Button layoutX="279.0" layoutY="426.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="127.0" style="-fx-background-color: transparent;" text="Forgot Password?" underline="true">
+              <font>
+                <Font name="Arial Bold" size="12.0" />
+              </font>
+            </Button>
+          </children>
+        </AnchorPane>
+      </left>
+    </BorderPane>
+  </children>
+</VBox>

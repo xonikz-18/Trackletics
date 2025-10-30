@@ -15,7 +15,7 @@
 
                     <children>
 
-                        <Label layoutX="544.0" layoutY="146.0" prefHeight="23.0" prefWidth="347.0" styleClass="sign-in-text" text="Name">
+                        <Label layoutX="544.0" layoutY="68.0" prefHeight="23.0" prefWidth="347.0" styleClass="sign-in-text" text="Name">
                             <font>
                                 <Font size="13.0" />
                             </font>
@@ -25,29 +25,44 @@
                         <HBox layoutX="210.0" layoutY="222.0" spacing="0" styleClass="toggle-container" />
 
                         <!-- Input fields -->
-                        <TextField layoutX="546.0" layoutY="201.0" prefHeight="0.0" prefWidth="311.0" promptText="Email" styleClass="primary-border" />
-
-                        <Button layoutX="536.0" layoutY="420.0" prefHeight="36.0" prefWidth="399.0" styleClass="primary-button" text="Sign In" />
-                        <PasswordField layoutX="546.0" layoutY="277.0" prefHeight="34.0" prefWidth="344.0" promptText="Password" styleClass="primary-border" />
-                          <ImageView fitHeight="265.0" fitWidth="366.0" layoutY="-19.0" pickOnBounds="true" preserveRatio="true" styleClass="logo-shadow">
+                        <TextField layoutX="544.0" layoutY="91.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="10.0" prefWidth="311.0" promptText="Enter your Name" styleClass="primary-border" />
+                          <ImageView fitHeight="152.0" fitWidth="202.0" layoutX="42.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" styleClass="logo-shadow">
                               <image>
                                   <Image url="@image/trackletics%20landscape.png" />
                               </image>
                           </ImageView>
-                  <Label layoutX="544.0" layoutY="235.0" prefHeight="23.0" prefWidth="347.0" styleClass="sign-in-text" text="Age">
+                  <Label layoutX="544.0" layoutY="133.0" prefHeight="23.0" prefWidth="347.0" styleClass="sign-in-text" text="Age">
                      <font>
                         <Font size="13.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="544.0" layoutY="351.0" prefHeight="46.0" prefWidth="397.0" promptText="Email" styleClass="primary-border" />
-                  <Label layoutX="544.0" layoutY="328.0" prefHeight="23.0" prefWidth="347.0" styleClass="sign-in-text" text="Age">
+                  <Label layoutX="544.0" layoutY="248.0" prefHeight="23.0" prefWidth="347.0" styleClass="sign-in-text" text="Email">
                      <font>
                         <Font size="13.0" />
                      </font>
                   </Label>
-                  <Label layoutX="416.0" layoutY="374.0" prefHeight="23.0" prefWidth="347.0" styleClass="sign-in-text" text="Age">
+                  <Label layoutX="544.0" layoutY="317.0" prefHeight="23.0" prefWidth="347.0" styleClass="sign-in-text" text="Password">
                      <font>
                         <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="544.0" layoutY="156.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="10.0" prefWidth="311.0" promptText="Enter your Age" styleClass="primary-border" />
+                  <TextField layoutX="544.0" layoutY="271.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="10.0" prefWidth="311.0" promptText="Enter your Email" styleClass="primary-border" />
+                  <TextField layoutX="544.0" layoutY="340.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="10.0" prefWidth="311.0" promptText="Enter your Password" styleClass="primary-border" />
+                  <TextField layoutX="544.0" layoutY="386.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="10.0" prefWidth="311.0" promptText="Re-enter your Password" styleClass="primary-border" />
+                  <Label layoutX="544.0" layoutY="211.0" prefHeight="23.0" prefWidth="347.0" styleClass="sign-in-text" text="Gender">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="553.0" layoutY="436.0" prefHeight="23.0" prefWidth="347.0" styleClass="sign-in-text" text="Password">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="114.0" layoutY="292.0" prefHeight="50.0" prefWidth="325.0" styleClass="sign-in-text" text="Use at least 8 characters and contain at least two of the following: upper case letters, lower case letters, numbers, and symbols." textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="Arial" size="13.0" />
                      </font>
                   </Label>
                     </children>

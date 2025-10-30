@@ -11,7 +11,7 @@
     <BorderPane prefHeight="554.0" prefWidth="944.0">
 
       <left>
-        <AnchorPane prefHeight="554.0" prefWidth="616.0" BorderPane.alignment="CENTER">
+        <AnchorPane prefHeight="554.0" prefWidth="948.0" BorderPane.alignment="CENTER">
 
           <children>
 

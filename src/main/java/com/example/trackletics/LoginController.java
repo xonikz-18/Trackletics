@@ -1,4 +1,4 @@
-package com.trackletics;
+package com.example.trackletics;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<VBox prefHeight="554.0" prefWidth="944.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trackletics.SettingsPrivacyPolicyController">
+
+    <children>
+        <BorderPane prefHeight="554.0" prefWidth="944.0">
+            <center>
+                <AnchorPane prefHeight="561.0" prefWidth="944.0" BorderPane.alignment="CENTER">
+                    <children>
+
+                        <!-- Logo -->
+                        <ImageView fitHeight="133.0" fitWidth="178.0" layoutX="25.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true" styleClass="logo-shadow">
+                            <image>
+                                <Image url="@image/trackletics%20landscape.png" />
+                            </image>
+                        </ImageView>
+
+                        <!-- Title -->
+                        <Label layoutX="241.0" layoutY="130.0" text="Privacy Policy">
+                            <font>
+                                <Font size="36.0" />
+                            </font>
+                        </Label>
+
+                        <!-- Scrollable Privacy Policy -->
+                        <ScrollPane fitToWidth="true" layoutX="219.0" layoutY="180.0" prefHeight="340.0" prefWidth="665.0" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+                            <content>
+                                <TextFlow lineSpacing="5.0" style="-fx-padding: 20;" textAlignment="JUSTIFY">
+                                    <Text styleClass="transparent-scroll" text="Effective Date: October 20, 2025. Trackletics is dedicated to protecting your personal and fitness information. This privacy policy explains how the application collects, uses, and safeguards any data you provide while using our services. When you use Trackletics, we collect information to ensure a smooth and personalized experience. This includes account details such as your name, email address, and password, as well as health and fitness data you manually enter or sync from other devices, including workout logs, nutrition details, sleep duration, body measurements, and hydration data. We also gather general usage information about how you interact with the app, including your device type, operating system, and IP address. Your information is used solely to provide and improve the services offered through Trackletics. It allows us to deliver accurate tracking, goal setting, and performance reports, and to enhance functionality across different devices. We also use it to ensure a better user experience and maintain the reliability and security of the app. Trackletics does not sell your personal or health data. Information may only be shared in limited cases such as with trusted service providers who help operate the application, in compliance with legal obligations, or when you choose to share your progress with others. All service providers are required to keep your information confidential and to use it only for the purposes agreed upon. We take appropriate security measures to protect your data from unauthorized access or misuse. While we strive to ensure the highest level of security, please understand that no method of transmitting data over the internet is entirely risk-free. You have full control over your information within Trackletics. You can update your details through the app settings or request the deletion of your account and associated data by contacting us directly. If you have questions, concerns, or requests regarding your data or this privacy policy, you can reach us anytime at trackletics@gmail.com.">
+                                        <font>
+                                            <Font size="15.0" />
+                                        </font>
+                                    </Text>
+                                </TextFlow>
+                            </content>
+                        </ScrollPane>
+
+                    </children>
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+</VBox>

@@ -2,6 +2,7 @@ package com.example.trackletics;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -20,7 +21,7 @@ public class MainApplication extends Application {
         String styleCss = this.getClass().getResource("application.css").toExternalForm();
         scene.getStylesheets().add(styleCss);
 
-        stage.setTitle("Dentra");
+        stage.setTitle("Trackletics");
         stage.setScene(scene);
         stage.show();
     }

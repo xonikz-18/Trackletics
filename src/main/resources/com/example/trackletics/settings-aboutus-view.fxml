@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="554.0" prefWidth="944.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trackletics.SettingsAboutUsController">
+
+    <children>
+        <BorderPane prefHeight="554.0" prefWidth="944.0">
+            <center>
+                <AnchorPane prefHeight="554.0" prefWidth="948.0" BorderPane.alignment="CENTER">
+
+                    <children>
+
+                        <!-- Sign In / Sign Up toggle -->
+                        <HBox layoutX="210.0" layoutY="222.0" spacing="0" styleClass="toggle-container" />
+                        <ImageView fitHeight="263.0" fitWidth="334.0" layoutX="33.0" layoutY="-34.0" pickOnBounds="true" preserveRatio="true" styleClass="logo-shadow">
+                            <image>
+                                <Image url="@image/trackletics%20landscape.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="56.0" layoutY="277.0" prefHeight="182.0" prefWidth="524.0" styleClass="sign-in-text" text="Tracklethics is a health and fitness tracker developed by BSIT 2nd year students, designed to help users monitor workouts, nutrition, sleep, hydration, and wellness in one easy-to-use app. What sets us apart? As users achieve their goals, they earn tokens that can be redeemed for rewards or to support social causes combining personal growth with community impact." textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                            <font>
+                                <Font name="Arial" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="212.0" layoutY="277.0" text="What we do">
+                            <font>
+                                <Font name="Arial Nova" size="36.0" />
+                            </font>
+                        </Label>
+                  <Accordion layoutX="128.0" layoutY="147.0" prefHeight="51.0" prefWidth="164.0" />
+                  <BorderPane layoutX="125.0" layoutY="210.0" prefHeight="46.0" prefWidth="366.0" style="-fx-background-color: #D8D8D8;" styleClass="round-border" />
+                    </children>
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+</VBox>

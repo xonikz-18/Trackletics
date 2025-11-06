@@ -38,6 +38,12 @@
                 </ImageView>
                      </children>
             </Pane>
+                  <Label layoutX="216.0" layoutY="469.0" prefHeight="23.0" prefWidth="182.0" styleClass="sign-in-text" text="Don't have an account? Sign up" textFill="#0009ff">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="623.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true" />
           </children>
         </AnchorPane>
       </left>

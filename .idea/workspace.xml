@@ -5,13 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19670abb-4b90-4d39-b94e-97d5aa8a3c33" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/trackletics/NutritionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/trackletics/SleepnHydrationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/trackletics/nutrition-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/trackletics/sleepnhydration-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/trackletics/ForgotPasswordController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/trackletics/LogMealController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/trackletics/LogSleepController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/trackletics/LogWaterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/trackletics/SettingsAboutUsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/trackletics/SettingsPrivacyPolicyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/trackletics/SettingsProfileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/trackletics/forgot-password-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/trackletics/log-meal-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/trackletics/log-sleep-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/trackletics/log-water-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/trackletics/settings-aboutus-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/trackletics/settings-privacy-policy-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/trackletics/settings-profile-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/trackletics/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/trackletics/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/trackletics/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/trackletics/MainApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/trackletics/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/trackletics/application.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/trackletics/login-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/trackletics/login-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/trackletics/sign-in-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/trackletics/sign-in-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,20 +69,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.MainApplication.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MainApplication.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Merging main",
+    "ignore.virus.scanning.warn.message": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Lenovo\Desktop\Trackletics\src\main\resources\com\example\trackletics\image" />

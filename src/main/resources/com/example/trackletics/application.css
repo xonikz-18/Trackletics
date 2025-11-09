@@ -13,7 +13,7 @@
 }
 
 .primary-button {
-    -fx-border-radius: 10;
+     -fx-border-radius: 10;
      -fx-background-radius: 10;
      -fx-background-color: #B075B0;
      -fx-text-fill: black;
@@ -26,7 +26,6 @@
      -fx-background-color: black;
      -fx-text-fill: white;
      -fx-font-weight: bold;
-     -fx
 }
 
 .primary-border {
@@ -105,6 +104,29 @@
     -fx-text-fill: black;
 }
 
+.notif-button {
+    /* 1. Set the image as the button's background */
+    -fx-background-image: url('bell.png');
+
+    /* 2. Configure image scaling and positioning */
+    -fx-background-size: 30px 30px; /* Set the desired size of the image */
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center; /* Center the image in the button area */
+
+    /* 3. Remove default button styling (optional, but makes it look cleaner) */
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+
+    /* 4. Set the final button size */
+    -fx-pref-size: 40px; /* Uniform width and height */
+    -fx-padding: 0;
+}
+
+/* Optional: Add hover effect */
+.notif-button:hover {
+    -fx-background-color: #e0e0e0;
+}
+
 
 .transparent-scroll {
     -fx-background-color: transparent;
@@ -145,4 +167,11 @@
     -fx-background-radius: 15;
     -fx-border-radius: 15;
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3);
+}
+
+.start-button {
+    -fx-background-color: #5B2866;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
 }

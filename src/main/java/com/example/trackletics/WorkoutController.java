@@ -1,5 +1,4 @@
 package com.example.trackletics;
 
-public class NutritionController {
-
+public class WorkoutController {
 }

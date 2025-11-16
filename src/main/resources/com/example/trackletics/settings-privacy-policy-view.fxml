@@ -31,6 +31,26 @@
                             <font>
                                 <Font name="Arial Nova" size="36.0" />
                             </font>
+                            <Label layoutX="67.0" layoutY="173.0" prefHeight="30.0" prefWidth="59.0" styleClass="sign-in-text" text="Profile" textOverrun="CLIP" wrapText="true">
+                                <font>
+                                    <Font name="Arial" size="19.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="66.0" layoutY="217.0" prefHeight="30.0" prefWidth="140.0" styleClass="sign-in-text" text="Privacy Policy" textOverrun="CLIP" wrapText="true">
+                                <font>
+                                    <Font name="Arial" size="19.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="66.0" layoutY="262.0" prefHeight="30.0" prefWidth="82.0" styleClass="sign-in-text" text="About Us" textOverrun="CLIP" wrapText="true">
+                                <font>
+                                    <Font name="Arial" size="19.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="65.0" layoutY="304.0" prefHeight="26.0" prefWidth="71.0" styleClass="sign-in-text" text="Log Out" textOverrun="CLIP" wrapText="true">
+                                <font>
+                                    <Font name="Arial" size="19.0" />
+                                </font>
+                            </Label>
                         </Label>
                     </children>
                 </AnchorPane>

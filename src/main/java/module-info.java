@@ -8,6 +8,7 @@ module com.example.trackletics {
     requires net.synedra.validatorfx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires java.desktop;
 
     opens com.example.trackletics to javafx.fxml;
     exports com.example.trackletics;

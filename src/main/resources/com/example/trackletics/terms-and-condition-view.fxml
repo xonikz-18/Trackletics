@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="554.0" prefWidth="944.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trackletics.TermsandConditionController">
+
+    <children>
+        <BorderPane prefHeight="554.0" prefWidth="944.0">
+
+            <left>
+                <AnchorPane prefHeight="554.0" prefWidth="948.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <HBox layoutX="210.0" layoutY="222.0" spacing="0" styleClass="toggle-container" />
+                        <Pane layoutX="269.0" layoutY="39.0" prefHeight="460.0" prefWidth="427.0" styleClass="anchor-pane">
+                            <children>
+                                <ImageView fitHeight="218.0" fitWidth="279.0" layoutX="66.0" layoutY="-41.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@image/trackleticslandscape.png" />
+                                    </image>
+                                </ImageView>
+                                <Button layoutX="66.0" layoutY="412.0" prefHeight="22.0" prefWidth="297.0" styleClass="profile-button" text="Accept and Continue" textFill="WHITE" />
+                                <Label layoutX="20.0" layoutY="71.0" prefHeight="318.0" prefWidth="388.0" text="By using Trackletics, you agree to these Terms and Conditions, which govern your access to and use of our fitness tracking platform. Trackletics provides tools to help you monitor and improve your health, including tracking workouts, nutrition, sleep, hydration, and body measurements. You must provide accurate account information, and you’re responsible for keeping your login details secure. We collect personal data to deliver our services, and you consent to this collection as outlined in our Privacy Policy. You agree not to misuse the Platform, and we may suspend or terminate your account for violating these Terms. Trackletics is provided &quot;as-is,&quot; and we are not responsible for any damages arising from its use. We may update these Terms from time to time, and continued use of the service constitutes acceptance of any changes. For any questions or concerns, please contact us directly at trackletics@gmail.com." textAlignment="JUSTIFY" textOverrun="CLIP" wrapText="true" />
+                            </children>
+                        </Pane>
+                    </children>
+                </AnchorPane>
+            </left>
+        </BorderPane>
+    </children>
+</VBox>

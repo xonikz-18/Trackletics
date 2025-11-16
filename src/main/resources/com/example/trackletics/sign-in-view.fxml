@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.RadioButton?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<VBox prefHeight="554.0" prefWidth="944.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trackletics.SignInController">
-
+<VBox prefHeight="554.0" prefWidth="944.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trackletics.SignInController">
     <children>
         <BorderPane prefHeight="554.0" prefWidth="944.0">
-
             <left>
                 <AnchorPane prefHeight="554.0" prefWidth="948.0" BorderPane.alignment="CENTER">
-
                     <children>
 
                         <Label layoutX="548.0" layoutY="104.0" prefHeight="23.0" prefWidth="347.0" styleClass="sign-in-text" text="Name">
@@ -27,15 +17,11 @@
                                 <Font size="13.0" />
                             </font>
                         </Label>
-
-                        <!-- Sign In / Sign Up toggle -->
                         <HBox layoutX="210.0" layoutY="222.0" spacing="0" styleClass="toggle-container" />
-
-                        <!-- Input fields -->
                         <TextField layoutX="544.0" layoutY="124.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="299.0" promptText="Enter your Name" style="-fx-background-color: E8E8E8;" styleClass="sign-in-border" />
                           <ImageView fitHeight="278.0" fitWidth="391.0" layoutX="538.0" layoutY="-65.0" pickOnBounds="true" preserveRatio="true" styleClass="logo-shadow">
                               <image>
-                                  <Image url="@image/trackletics%20landscape.png" />
+                                  <Image url="@image/trackleticslandscape.png" />
                               </image>
                           </ImageView>
                   <Label layoutX="549.0" layoutY="163.0" prefHeight="23.0" prefWidth="347.0" styleClass="sign-in-text" text="Age">
@@ -75,6 +61,11 @@
                         <Font name="Arial" size="11.0" />
                      </font>
                   </Label>
+                  <ImageView fitHeight="561.0" fitWidth="485.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/running.png" />
+                     </image>
+                  </ImageView>
                     </children>
                 </AnchorPane>
             </left>

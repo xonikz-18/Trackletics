@@ -15,7 +15,7 @@
 .primary-button {
      -fx-border-radius: 10;
      -fx-background-radius: 10;
-     -fx-background-color: #B075B0;
+     -fx-background-color: #5B2866;
      -fx-text-fill: black;
      -fx-font-weight: bold;
 }
@@ -35,126 +35,97 @@
 
 }
 
-
-
 .round-border {
     -fx-border-radius: 20;
     -fx-background-radius: 20;
 }
 
 .profile-button {
-    -fx-background-color: #B075B0;
-    -fx-border-color: #B075B0;
+    -fx-background-color: #5B2866;
+    -fx-border-color: #5B2866;
     -fx-border-width: 2;
     -fx-border-radius: 10;
     -fx-background-radius: 10;
 }
 
 .radio-button .radio {
-    -fx-shape: "M 0 5 A 5 5 0 1 1 0 4.9 Z"; /* forces it to stay circular */
-    -fx-background-color: transparent;       /* remove colored box */
-    -fx-border-color: derive(#B075B0, 0%);   /* keeps the ring default or tinted */
+    -fx-shape: "M 0 5 A 5 5 0 1 1 0 4.9 Z";
+    -fx-background-color: transparent;
+    -fx-border-color: derive(#5B2866, 0%);
 }
 
 .radio-button:selected .radio > .dot {
-    -fx-background-color: #B075B0;           /* color of the selected inner circle */
+    -fx-background-color: #5B2866;
 }
 
 .check-box .box {
-    -fx-border-color: black;      /* outline color */
-    -fx-background-color: white;  /* box background */
+    -fx-border-color: black;
+    -fx-background-color: white;
 }
 
 .check-box:selected .mark {
-    -fx-background-color: black;  /* checkmark color */
+    -fx-background-color: black;
 }
 
 .login-border {
-    -fx-background-color: #E8E8E8; /* light gray background */
+    -fx-background-color: #E8E8E8;
     -fx-background-radius: 10;
     -fx-border-radius: 10;
-    -fx-pref-width: 300;           /* wider */
-    -fx-pref-height: 5;          /* shorter height */
+    -fx-pref-width: 300;
+    -fx-pref-height: 5;
 
 }
-
 
 .sign-in-border {
-    -fx-background-color: #E8E8E8; /* light gray background */
-    -fx-background-radius: 10;     /* rounded corners (optional) */
-    -fx-border-radius: 10;         /* match the background curve */
-    -fx-pref-width: 350;           /* set width */
-    -fx-pref-height: 5;          /* set height */
+    -fx-background-color: #E8E8E8;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-pref-width: 350;
+    -fx-pref-height: 5;
 }
 
-
 .sign-in-text {
-/* Existing styles, if any */
-
-    /* ADD THE DROPSHADOW EFFECT HERE */
-    -fx-effect: dropshadow(
-        black,                /* Blur Type */
-        rgba(0, 0, 0, 0.7),      /* Shadow Color: Black with 70% opacity */
-        1.5,                     /* Radius: A small radius for sharp text shadow */
-        0,                       /* Spread */
-        10,                       /* Offset X: 1 pixel to the right */
-        10                        /* Offset Y: 1 pixel down */
-    );
-    /* Make the original text WHITE so the dark shadow is visible */
+    -fx-effect: dropshadow(black, rgba(0, 0, 0, 0.7), 1.5, 0, 10, 10);
     -fx-text-fill: black;
 }
 
 .notif-button {
-    /* 1. Set the image as the button's background */
     -fx-background-image: url('bell.png');
-
-    /* 2. Configure image scaling and positioning */
-    -fx-background-size: 30px 30px; /* Set the desired size of the image */
+    -fx-background-size: 30px 30px;
     -fx-background-repeat: no-repeat;
-    -fx-background-position: center; /* Center the image in the button area */
-
-    /* 3. Remove default button styling (optional, but makes it look cleaner) */
+    -fx-background-position: center;
     -fx-background-color: transparent;
     -fx-border-color: transparent;
-
-    /* 4. Set the final button size */
-    -fx-pref-size: 40px; /* Uniform width and height */
+    -fx-pref-size: 40px
     -fx-padding: 0;
 }
 
-/* Optional: Add hover effect */
 .notif-button:hover {
     -fx-background-color: #e0e0e0;
 }
-
 
 .transparent-scroll {
     -fx-background-color: transparent;
     -fx-border-color: transparent;
     -fx-padding: 20;
-        -fx-line-spacing: 8px;
-        -fx-background-color: transparent;
-
-    /* Size control */
+    -fx-line-spacing: 8px;
+    -fx-background-color: transparent;
     -fx-pref-width: 720;
     -fx-pref-height: 390;
-
-    /* Optional: smooth corners */
     -fx-background-radius: 10;
     -fx-border-radius: 10;
 }
 
 .metric-card {
-    -fx-background-color: #FFFFFF; /* Using white for a cleaner look like the image */
-    -fx-background-radius: 15;
-    -fx-border-radius: 15;
-    -fx-padding: 20; /* SEMICOLON ADDED */
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3); /* Lighter shadow */
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3);
 }
 
 .navigation-pill{
-    /* CRITICAL FIX: Increased vertical padding (5px top/bottom) for a proper pill shape */
-    -fx-padding: 5 15 5 15; /* Top 5, Right 15, Bottom 5, Left 15 */
+    -fx-padding: 5 15 5 15;
     -fx-background-color: #5B2866;
     -fx-background-radius: 15;
     -fx-border-radius: 15;
@@ -162,7 +133,7 @@
 }
 
 .navigation-notification{
-    -fx-padding: 5 15 5 15; /* Top 5, Right 15, Bottom 5, Left 15 */
+    -fx-padding: 5 15 5 15;
     -fx-background-color: #F5F5F5;
     -fx-background-radius: 15;
     -fx-border-radius: 15;
@@ -174,4 +145,31 @@
     -fx-text-fill: white;
     -fx-font-weight: bold;
     -fx-background-radius: 10;
+}
+
+.log-water-pane {
+    -fx-background-color: #5B2866;
+    -fx-background-radius: 10;
+}
+
+.table {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3); /* Lighter shadow */
+}
+
+.white {
+    -fx-background-color: #FFFFFF;
+}
+
+.terms-color-pane {
+    -fx-background-color: D8BDDE;
+}
+
+.anchor-pane {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-background-color: #E8E8E8
 }

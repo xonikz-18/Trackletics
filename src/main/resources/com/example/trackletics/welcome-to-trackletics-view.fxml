@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane opacity="0.5" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: CC66DA;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trackletics.WelcomeToTrackleticsController">
+    <children>
+        <Label layoutX="66.0" layoutY="159.0" text="Welcome to Trackletics !" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic" size="40.0" />
+            </font>
+        </Label>
+        <ProgressBar layoutX="200.0" layoutY="220.0" prefWidth="200.0" progress="0.0" style="-fx-background-color: FFFFFF;" />
+    </children>
+</AnchorPane>

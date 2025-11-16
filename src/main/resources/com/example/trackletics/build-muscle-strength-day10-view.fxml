@@ -5,20 +5,20 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="554.0" prefWidth="944.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trackletics.NutritionController">
+<VBox prefHeight="554.0" prefWidth="944.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trackletics.BuildMuscleStrengthDay10Controller">
 
     <children>
         <BorderPane prefHeight="554.0" prefWidth="944.0">
-            <center>
+            <top>
                 <AnchorPane accessibleRole="BUTTON" prefHeight="554.0" prefWidth="948.0" BorderPane.alignment="CENTER">
 
                     <children>
                         <ImageView fitHeight="159.0" fitWidth="202.0" layoutX="27.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true" styleClass="logo-shadow">
                             <image>
-                                <Image url="@image/trackletics%20landscape.png" />
+                                <Image url="@image/trackleticslandscape.png" />
                             </image>
                         </ImageView>
-                        <Label layoutX="42.0" layoutY="135.0" prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="12 Workouts" textOverrun="CLIP" wrapText="true">
+                        <Label layoutX="42.0" layoutY="135.0" prefHeight="30.0" prefWidth="67.0" styleClass="sign-in-text" text="12 Workouts" textOverrun="CLIP" wrapText="true">
                             <font>
                                 <Font name="Arial" size="11.0" />
                             </font>
@@ -30,18 +30,27 @@
                         </Label>
                         <VBox layoutX="34.0" layoutY="206.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
                             <children>
-                                <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="185.0" text="CURTSY LUNGES" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="10.0" />
-                                    </font>
-                                </Label>
-                                <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="x20" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
+                                <Pane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <ImageView fitHeight="92.0" fitWidth="75.0" layoutX="-20.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/Rectangle%20247.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label alignment="CENTER_RIGHT" layoutX="51.0" prefHeight="28.0" prefWidth="52.0" text="SQUATS" textOverrun="CLIP">
+                                            <font>
+                                                <Font name="System Bold" size="10.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER_RIGHT" layoutX="58.0" layoutY="14.0" prefHeight="30.0" prefWidth="25.0" styleClass="sign-in-text" text="x16" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
                             </children></VBox>
-                        <HBox alignment="CENTER_LEFT" layoutX="282.0" layoutY="44.0" prefHeight="34.0" prefWidth="396.0" spacing="10.0" styleClass="navigation-pill">
+                        <HBox alignment="CENTER_LEFT" layoutX="309.0" layoutY="44.0" prefHeight="34.0" prefWidth="409.0" spacing="10.0" styleClass="navigation-pill">
                             <children>
                                 <Hyperlink prefHeight="34.0" prefWidth="53.0" text="HOME" textAlignment="CENTER" textFill="WHITE">
                                     <font>
@@ -60,35 +69,31 @@
                                         <Font name="Arial Rounded MT Bold" size="12.0" />
                                     </font></Hyperlink>
                             </children></HBox>
-                        <HBox alignment="CENTER_LEFT" layoutX="684.0" layoutY="44.0" prefHeight="34.0" prefWidth="125.0" spacing="10.0" styleClass="navigation-pill">
+                        <HBox alignment="CENTER_LEFT" layoutX="728.0" layoutY="44.0" prefHeight="34.0" prefWidth="121.0" spacing="10.0" styleClass="navigation-pill">
                             <children>
-                                <Hyperlink prefHeight="25.0" prefWidth="109.0" text="       SETTINGS" textAlignment="CENTER" textFill="WHITE">
-                                    <font>
-                                        <Font name="Arial Rounded MT Bold" size="12.0" />
-                                    </font>
-                                </Hyperlink>
-                            </children>
-                        </HBox>
-                        <HBox alignment="CENTER_LEFT" layoutX="816.0" layoutY="44.0" prefHeight="35.0" prefWidth="14.0" spacing="10.0" styleClass="navigation-notification">
-                            <children>
-                                <HBox prefWidth="25.0">
+                                <Pane prefHeight="200.0" prefWidth="200.0">
                                     <children>
-                                        <Hyperlink prefHeight="26.0" prefWidth="29.0" textFill="WHITE">
+                                        <Hyperlink layoutX="2.0" prefHeight="25.0" prefWidth="93.0" text="       SETTINGS" textAlignment="CENTER" textFill="WHITE">
                                             <font>
                                                 <Font name="Arial Rounded MT Bold" size="12.0" />
                                             </font>
                                         </Hyperlink>
+                                        <ImageView fitHeight="24.0" fitWidth="21.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/Frame.png" />
+                                            </image>
+                                        </ImageView>
                                     </children>
-                                </HBox>
+                                </Pane>
                             </children>
                         </HBox>
-                        <HBox alignment="CENTER_LEFT" layoutX="861.0" layoutY="44.0" prefHeight="34.0" prefWidth="17.0" spacing="10.0" styleClass="navigation-notification">
+                        <HBox alignment="CENTER_LEFT" layoutX="861.0" layoutY="41.0" prefHeight="39.0" prefWidth="50.0" spacing="10.0" styleClass="navigation-notification">
                             <children>
-                                <Hyperlink prefHeight="25.0" prefWidth="20.0" textAlignment="CENTER" textFill="WHITE">
-                                    <font>
-                                        <Font name="Arial Rounded MT Bold" size="12.0" />
-                                    </font>
-                                </Hyperlink>
+                                <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@image/image%2091%20(1).png" />
+                                    </image>
+                                </ImageView>
                             </children>
                         </HBox>
                         <Button layoutX="39.0" layoutY="172.0" maxWidth="207.0" minHeight="14.0" minWidth="55.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="193.0" styleClass="start-button" text="GO!" textFill="WHITE">
@@ -98,161 +103,283 @@
                         </Button>
                         <VBox layoutX="34.0" layoutY="317.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
                             <children>
-                                <Label alignment="CENTER_RIGHT" prefHeight="22.0" prefWidth="174.0" text="BOX PUSH-UPS" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="10.0" />
-                                    </font>
-                                </Label>
-                                <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="x16" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
-                            </children>
-                        </VBox>
+                                <Pane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <ImageView fitHeight="92.0" fitWidth="74.0" layoutX="-20.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/Rectangle%20221.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label alignment="CENTER_RIGHT" layoutX="58.0" layoutY="6.0" prefHeight="22.0" prefWidth="80.0" text="BOX PUSH-UPS" textOverrun="CLIP">
+                                            <font>
+                                                <Font name="System Bold" size="10.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER_RIGHT" layoutX="57.0" layoutY="17.0" prefHeight="30.0" prefWidth="26.0" styleClass="sign-in-text" text="x12" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
+                            </children></VBox>
                         <VBox layoutX="34.0" layoutY="431.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
                             <children>
-                                <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="185.0" text="SCISSORS" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="10.0" />
-                                    </font>
-                                </Label>
-                                <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="00:30" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
+                                <Pane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <ImageView fitHeight="91.0" fitWidth="75.0" layoutX="-20.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/Rectangle%20243%20(1).png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label alignment="CENTER_RIGHT" layoutX="58.0" layoutY="2.0" prefHeight="21.0" prefWidth="98.0" text="SLOW MOUNTAIN " textOverrun="CLIP">
+                                            <font>
+                                                <Font name="System Bold" size="10.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER_RIGHT" layoutX="53.0" layoutY="18.0" prefHeight="18.0" prefWidth="55.0" text="CLIMBER" textOverrun="CLIP">
+                                            <font>
+                                                <Font name="System Bold" size="10.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER_RIGHT" layoutX="53.0" layoutY="35.0" prefHeight="14.0" prefWidth="42.0" styleClass="sign-in-text" text="00:30" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
                             </children>
                         </VBox>
                         <VBox layoutX="258.0" layoutY="206.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
                             <children>
-                                <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="185.0" text="RUSSIAN TWIST" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="10.0" />
-                                    </font>
-                                </Label>
-                                <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="x16" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
+                                <Pane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <ImageView fitHeight="95.0" fitWidth="72.0" layoutX="-20.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/Rectangle%20225.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label alignment="CENTER_RIGHT" layoutX="59.0" prefHeight="28.0" prefWidth="84.0" text="RUSSIAN TWIST" textOverrun="CLIP">
+                                            <font>
+                                                <Font name="System Bold" size="10.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER_RIGHT" layoutX="62.0" layoutY="16.0" prefHeight="26.0" prefWidth="22.0" styleClass="sign-in-text" text="x10" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
                             </children>
                         </VBox>
                         <VBox layoutX="480.0" layoutY="206.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
                             <children>
-                                <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="185.0" text="FLUTTER KICKS" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="10.0" />
-                                    </font>
-                                </Label>
-                                <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="00:30" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
+                                <Pane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <ImageView fitHeight="92.0" fitWidth="78.0" layoutX="-20.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/Rectangle%20226.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="-9.0" prefHeight="35.0" prefWidth="100.0" text="BACKWARD LUNGE " textOverrun="CLIP">
+                                            <font>
+                                                <Font name="System Bold" size="10.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="4.0" prefHeight="35.0" prefWidth="66.0" text="WITH FRONT" textOverrun="CLIP">
+                                            <font>
+                                                <Font name="System Bold" size="10.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER_RIGHT" layoutX="47.0" layoutY="27.0" prefHeight="15.0" prefWidth="68.0" text=" KICK LEFT" textOverrun="CLIP">
+                                            <font>
+                                                <Font name="System Bold" size="10.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER_RIGHT" layoutX="63.0" layoutY="32.0" prefHeight="30.0" prefWidth="18.0" styleClass="sign-in-text" text="x6" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
                             </children>
                         </VBox>
                         <VBox layoutX="704.0" layoutY="206.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
                             <children>
-                                <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="185.0" text="CRUNCH KICKS" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="10.0" />
-                                    </font>
-                                </Label>
-                                <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="00:30" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
+                                <Pane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <ImageView fitHeight="91.0" fitWidth="75.0" layoutX="-20.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/Rectangle%20247.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label alignment="CENTER_RIGHT" layoutX="60.0" prefHeight="28.0" prefWidth="43.0" text="SQUATS" textOverrun="CLIP">
+                                            <font>
+                                                <Font name="System Bold" size="10.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER_RIGHT" layoutX="58.0" layoutY="15.0" prefHeight="26.0" prefWidth="25.0" styleClass="sign-in-text" text="x16" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
                             </children>
                         </VBox>
                         <VBox layoutX="704.0" layoutY="317.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
                             <children>
-                                <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="185.0" text="CAT COW POSE" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="10.0" />
-                                    </font>
-                                </Label>
-                                <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="00:30" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
+                                <Pane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <ImageView fitHeight="94.0" fitWidth="79.0" layoutX="-22.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/Rectangle%20245%20(1).png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label alignment="CENTER_RIGHT" layoutX="52.0" layoutY="4.0" prefHeight="28.0" prefWidth="72.0" text="HEEL TOUCH" textOverrun="CLIP">
+                                            <font>
+                                                <Font name="System Bold" size="10.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER_RIGHT" layoutX="53.0" layoutY="17.0" prefHeight="30.0" prefWidth="28.0" styleClass="sign-in-text" text="x10" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                                    </children></Pane>
                             </children>
                         </VBox>
                         <VBox layoutX="708.0" layoutY="431.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
                             <children>
-                                <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="185.0" text="COBRA STRETCH" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="10.0" />
-                                    </font>
-                                </Label>
-                                <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="00:30" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
+                                <Pane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <ImageView fitHeight="94.0" fitWidth="80.0" layoutX="-20.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/Rectangle%20202%20(3).png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label alignment="CENTER_RIGHT" layoutX="56.0" layoutY="3.0" prefHeight="28.0" prefWidth="87.0" text="COBRA STRETCH" textOverrun="CLIP">
+                                            <font>
+                                                <Font name="System Bold" size="10.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER_RIGHT" layoutX="63.0" layoutY="18.0" prefHeight="26.0" prefWidth="30.0" styleClass="sign-in-text" text="00:20" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
                             </children>
                         </VBox>
                         <VBox layoutX="258.0" layoutY="317.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
                             <children>
-                                <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="185.0" text="ABDOMINAL CRUNCHES" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="10.0" />
-                                    </font>
-                                </Label>
-                                <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="x16" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
+                                <Pane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <ImageView fitHeight="92.0" fitWidth="73.0" layoutX="-20.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/Rectangle%20224.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label alignment="CENTER_RIGHT" layoutX="60.0" layoutY="3.0" prefHeight="28.0" prefWidth="101.0" text="REVERSE CRUNCHES" textOverrun="CLIP">
+                                            <font>
+                                                <Font name="System Bold" size="10.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER_RIGHT" layoutX="60.0" layoutY="16.0" prefHeight="30.0" prefWidth="24.0" styleClass="sign-in-text" text="x12" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
                             </children>
                         </VBox>
                         <VBox layoutX="480.0" layoutY="317.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
                             <children>
-                                <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="185.0" text="PLANK" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="10.0" />
-                                    </font>
-                                </Label>
-                                <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="00:30" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
+                                <Pane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <ImageView fitHeight="92.0" fitWidth="78.0" layoutX="-19.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/Rectangle%20226%20(1).png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label alignment="CENTER_RIGHT" layoutX="62.0" layoutY="5.0" prefHeight="28.0" prefWidth="81.0" text="CAT SOW POSE" textOverrun="CLIP">
+                                            <font>
+                                                <Font name="System Bold" size="10.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER_RIGHT" layoutX="62.0" layoutY="19.0" prefHeight="26.0" prefWidth="38.0" styleClass="sign-in-text" text="00:30" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
                             </children>
                         </VBox>
                         <VBox layoutX="258.0" layoutY="431.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
                             <children>
-                                <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="185.0" text="REVERSE CRUNCHES" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="10.0" />
-                                    </font>
-                                </Label>
-                                <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="x18" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
+                                <Pane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <ImageView fitHeight="92.0" fitWidth="76.0" layoutX="-20.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/Rectangle%20223.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label alignment="CENTER_RIGHT" layoutX="63.0" layoutY="-12.0" prefHeight="35.0" prefWidth="100.0" text="BACKWARD LUNGE " textOverrun="CLIP">
+                                            <font>
+                                                <Font name="System Bold" size="10.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER_RIGHT" layoutX="64.0" layoutY="1.0" prefHeight="35.0" prefWidth="66.0" text="WITH FRONT" textOverrun="CLIP">
+                                            <font>
+                                                <Font name="System Bold" size="10.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER_RIGHT" layoutX="46.0" layoutY="24.0" prefHeight="15.0" prefWidth="68.0" text=" KICK LEFT" textOverrun="CLIP">
+                                            <font>
+                                                <Font name="System Bold" size="10.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER_RIGHT" layoutX="62.0" layoutY="31.0" prefHeight="30.0" prefWidth="18.0" styleClass="sign-in-text" text="x6" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
                             </children>
                         </VBox>
                         <VBox layoutX="480.0" layoutY="431.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
                             <children>
-                                <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="185.0" text="HELL TOUCH" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="10.0" />
-                                    </font>
-                                </Label>
-                                <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="00:14" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
+                                <Pane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <ImageView fitHeight="94.0" fitWidth="80.0" layoutX="-20.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/Rectangle%20228%20(1).png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label alignment="CENTER_RIGHT" layoutX="69.0" prefHeight="31.0" prefWidth="38.0" text="PLANK" textOverrun="CLIP">
+                                            <font>
+                                                <Font name="System Bold" size="10.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER_RIGHT" layoutX="64.0" layoutY="18.0" prefHeight="23.0" prefWidth="40.0" styleClass="sign-in-text" text="00:30" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
                             </children>
                         </VBox>
                     </children>
                 </AnchorPane>
-            </center>
+            </top>
         </BorderPane>
     </children>
 </VBox>

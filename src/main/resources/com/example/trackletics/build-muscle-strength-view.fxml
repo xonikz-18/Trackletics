@@ -9,13 +9,13 @@
 
     <children>
         <BorderPane prefHeight="554.0" prefWidth="944.0">
-            <center>
+            <bottom>
                 <AnchorPane accessibleRole="BUTTON" prefHeight="554.0" prefWidth="948.0" BorderPane.alignment="CENTER">
 
                     <children>
                         <ImageView fitHeight="159.0" fitWidth="202.0" layoutX="27.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true" styleClass="logo-shadow">
                             <image>
-                                <Image url="@image/trackletics%20landscape.png" />
+                                <Image url="@image/trackleticslandscape.png" />
                             </image>
                         </ImageView>
                         <Label layoutX="38.0" layoutY="135.0" prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="12 DAYS" textOverrun="CLIP" wrapText="true">
@@ -23,25 +23,36 @@
                                 <Font name="Arial" size="11.0" />
                             </font>
                         </Label>
-                        <Label layoutX="34.0" layoutY="97.0" text="Build Muscle &amp; Strength">
+                        <Label layoutX="34.0" layoutY="97.0" text="Build Muscle Strength">
                             <font>
                                 <Font name="Arial Nova" size="36.0" />
                             </font>
                         </Label>
-                        <VBox layoutX="34.0" layoutY="182.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
+                        <VBox layoutX="29.0" layoutY="175.0" prefHeight="111.0" prefWidth="218.0" style="-fx-background-color: #f0f0f0; -fx-background-radius: 10; -fx-padding: 10;">
                             <children>
-                                <Label prefHeight="40.0" prefWidth="100.0" text="DAY 1" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="24.0" />
-                                    </font>
-                                </Label>
-                                <Label prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="12 EXERCISES" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
-                            </children></VBox>
-                        <HBox alignment="CENTER_LEFT" layoutX="282.0" layoutY="44.0" prefHeight="34.0" prefWidth="396.0" spacing="10.0" styleClass="navigation-pill">
+                                <Pane prefHeight="102.0" prefWidth="191.0" styleClass="metric-card">
+                                    <children>
+
+                                        <Label layoutX="10.0" layoutY="14.0" prefHeight="40.0" prefWidth="100.0" text="DAY 1">
+                                            <font>
+                                                <Font name="System Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+
+                                        <Label layoutX="10.0" layoutY="53.0" text="14 EXERCISES" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                            <style>
+                                                -fx-text-fill: #555;
+                                            </style>
+                                        </Label>
+                                        <Button layoutX="114.0" layoutY="30.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
+                                    </children>
+                                </Pane>
+                            </children>
+                        </VBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="309.0" layoutY="44.0" prefHeight="34.0" prefWidth="409.0" spacing="10.0" styleClass="navigation-pill">
                             <children>
                                 <Hyperlink prefHeight="34.0" prefWidth="53.0" text="HOME" textAlignment="CENTER" textFill="WHITE">
                                     <font>
@@ -60,194 +71,268 @@
                                         <Font name="Arial Rounded MT Bold" size="12.0" />
                                     </font></Hyperlink>
                             </children></HBox>
-                        <HBox alignment="CENTER_LEFT" layoutX="684.0" layoutY="44.0" prefHeight="34.0" prefWidth="125.0" spacing="10.0" styleClass="navigation-pill">
+                        <HBox alignment="CENTER_LEFT" layoutX="728.0" layoutY="44.0" prefHeight="34.0" prefWidth="121.0" spacing="10.0" styleClass="navigation-pill">
                             <children>
-                                <Hyperlink prefHeight="25.0" prefWidth="109.0" text="       SETTINGS" textAlignment="CENTER" textFill="WHITE">
-                                    <font>
-                                        <Font name="Arial Rounded MT Bold" size="12.0" />
-                                    </font>
-                                </Hyperlink>
-                            </children>
-                        </HBox>
-                        <HBox alignment="CENTER_LEFT" layoutX="816.0" layoutY="44.0" prefHeight="35.0" prefWidth="14.0" spacing="10.0" styleClass="navigation-notification">
-                            <children>
-                                <HBox prefWidth="25.0">
+                                <Pane prefHeight="200.0" prefWidth="200.0">
                                     <children>
-                                        <Hyperlink prefHeight="26.0" prefWidth="29.0" textFill="WHITE">
+                                        <Hyperlink layoutX="2.0" prefHeight="25.0" prefWidth="93.0" text="       SETTINGS" textAlignment="CENTER" textFill="WHITE">
                                             <font>
                                                 <Font name="Arial Rounded MT Bold" size="12.0" />
                                             </font>
                                         </Hyperlink>
+                                        <ImageView fitHeight="24.0" fitWidth="21.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/Frame.png" />
+                                            </image>
+                                        </ImageView>
                                     </children>
-                                </HBox>
+                                </Pane>
                             </children>
                         </HBox>
-                        <HBox alignment="CENTER_LEFT" layoutX="861.0" layoutY="44.0" prefHeight="34.0" prefWidth="17.0" spacing="10.0" styleClass="navigation-notification">
+                        <VBox layoutX="29.0" layoutY="175.0" prefHeight="111.0" prefWidth="218.0" style="-fx-background-color: #f0f0f0; -fx-background-radius: 10; -fx-padding: 10;">
                             <children>
-                                <Hyperlink prefHeight="25.0" prefWidth="20.0" textAlignment="CENTER" textFill="WHITE">
-                                    <font>
-                                        <Font name="Arial Rounded MT Bold" size="12.0" />
-                                    </font>
-                                </Hyperlink>
-                            </children>
-                        </HBox>
-                        <VBox layoutX="34.0" layoutY="297.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
-                            <children>
-                                <Label prefHeight="40.0" prefWidth="100.0" text="DAY 2" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="24.0" />
-                                    </font>
-                                </Label>
-                                <Label prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="12 EXERCISES" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
-                            </children>
-                        </VBox>
-                        <VBox layoutX="34.0" layoutY="413.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
-                            <children>
-                                <Label prefHeight="40.0" prefWidth="100.0" text="DAY 3" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="24.0" />
-                                    </font>
-                                </Label>
-                                <Label prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="12 EXERCISES" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
+                                <Pane prefHeight="102.0" prefWidth="191.0" styleClass="metric-card">
+                                    <children>
+
+                                        <Label layoutX="10.0" layoutY="14.0" prefHeight="40.0" prefWidth="100.0" text="DAY 1">
+                                            <font>
+                                                <Font name="System Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+
+                                        <Label layoutX="10.0" layoutY="53.0" text="14 EXERCISES" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                            <style>
+                                                -fx-text-fill: #555;
+                                            </style>
+                                        </Label>
+                                        <Button layoutX="114.0" layoutY="30.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
+                                    </children>
+                                </Pane>
                             </children>
                         </VBox>
-                        <VBox layoutX="258.0" layoutY="182.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
+                        <VBox layoutX="29.0" layoutY="286.0" prefHeight="111.0" prefWidth="218.0" style="-fx-background-color: #f0f0f0; -fx-background-radius: 10; -fx-padding: 10;">
                             <children>
-                                <Label prefHeight="40.0" prefWidth="100.0" text="DAY 4" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="24.0" />
-                                    </font>
-                                </Label>
-                                <Label prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="REST" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
+                                <Pane prefHeight="102.0" prefWidth="191.0" styleClass="metric-card">
+                                    <children>
+                                        <Label layoutX="10.0" layoutY="14.0" prefHeight="40.0" prefWidth="100.0" text="DAY 2">
+                                            <font>
+                                                <Font name="System Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="10.0" layoutY="53.0" style="&#10;                                            " text="14 EXERCISES" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                                        <Button layoutX="114.0" layoutY="30.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
+                                    </children>
+                                </Pane>
                             </children>
                         </VBox>
-                        <VBox layoutX="258.0" layoutY="297.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
+                        <VBox layoutX="29.0" layoutY="402.0" prefHeight="111.0" prefWidth="218.0" style="-fx-background-color: #f0f0f0; -fx-background-radius: 10; -fx-padding: 10;">
                             <children>
-                                <Label prefHeight="40.0" prefWidth="100.0" text="DAY 5" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="24.0" />
-                                    </font>
-                                </Label>
-                                <Label prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="12 EXERCISES" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
+                                <Pane prefHeight="102.0" prefWidth="191.0" styleClass="metric-card">
+                                    <children>
+                                        <Label layoutX="10.0" layoutY="14.0" prefHeight="40.0" prefWidth="100.0" text="DAY 3">
+                                            <font>
+                                                <Font name="System Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="10.0" layoutY="53.0" style="&#10;                                            " text="14 EXERCISES" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                                        <Button layoutX="114.0" layoutY="30.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
+                                    </children>
+                                </Pane>
                             </children>
                         </VBox>
-                        <VBox layoutX="258.0" layoutY="413.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
+                        <VBox layoutX="250.0" layoutY="171.0" prefHeight="111.0" prefWidth="218.0" style="-fx-background-color: #f0f0f0; -fx-background-radius: 10; -fx-padding: 10;">
                             <children>
-                                <Label prefHeight="40.0" prefWidth="100.0" text="DAY 6" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="24.0" />
-                                    </font>
-                                </Label>
-                                <Label prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="12 EXERCISES" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
+                                <Pane prefHeight="102.0" prefWidth="191.0" styleClass="metric-card">
+                                    <children>
+                                        <Label layoutX="10.0" layoutY="14.0" prefHeight="40.0" prefWidth="100.0" text="DAY 4">
+                                            <font>
+                                                <Font name="System Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="10.0" layoutY="53.0" style="&#10;                                            " text="14 EXERCISES" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                                        <Button layoutX="114.0" layoutY="30.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
+                                    </children>
+                                </Pane>
                             </children>
                         </VBox>
-                        <VBox layoutX="480.0" layoutY="182.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
+                        <VBox layoutX="250.0" layoutY="286.0" prefHeight="111.0" prefWidth="218.0" style="-fx-background-color: #f0f0f0; -fx-background-radius: 10; -fx-padding: 10;">
                             <children>
-                                <Label prefHeight="40.0" prefWidth="100.0" text="DAY 7" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="24.0" />
-                                    </font>
-                                </Label>
-                                <Label prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="12 EXERCISES" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
+                                <Pane prefHeight="102.0" prefWidth="191.0" styleClass="metric-card">
+                                    <children>
+                                        <Label layoutX="10.0" layoutY="14.0" prefHeight="40.0" prefWidth="100.0" text="DAY 5">
+                                            <font>
+                                                <Font name="System Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="10.0" layoutY="53.0" style="&#10;                                            " text="14 EXERCISES" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                                        <Button layoutX="114.0" layoutY="30.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
+                                    </children>
+                                </Pane>
                             </children>
                         </VBox>
-                        <VBox layoutX="480.0" layoutY="297.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
+                        <VBox layoutX="250.0" layoutY="402.0" prefHeight="111.0" prefWidth="218.0" style="-fx-background-color: #f0f0f0; -fx-background-radius: 10; -fx-padding: 10;">
                             <children>
-                                <Label prefHeight="40.0" prefWidth="100.0" text="DAY 8" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="24.0" />
-                                    </font>
-                                </Label>
-                                <Label prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="REST" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
+                                <Pane prefHeight="102.0" prefWidth="191.0" styleClass="metric-card">
+                                    <children>
+                                        <Label layoutX="10.0" layoutY="14.0" prefHeight="40.0" prefWidth="100.0" text="DAY 6">
+                                            <font>
+                                                <Font name="System Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="10.0" layoutY="53.0" style="&#10;                                            " text="14 EXERCISES" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                              <ImageView fitHeight="63.0" fitWidth="70.0" layoutX="117.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/Frame%20(1).png" />
+                                 </image>
+                              </ImageView>
+                                    </children>
+                                </Pane>
                             </children>
                         </VBox>
-                        <VBox layoutX="480.0" layoutY="413.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
+                        <VBox layoutX="475.0" layoutY="171.0" prefHeight="111.0" prefWidth="218.0" style="-fx-background-color: #f0f0f0; -fx-background-radius: 10; -fx-padding: 10;">
                             <children>
-                                <Label prefHeight="40.0" prefWidth="100.0" text="DAY 9" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="24.0" />
-                                    </font>
-                                </Label>
-                                <Label prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="12 EXERCISES" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
+                                <Pane prefHeight="102.0" prefWidth="191.0" styleClass="metric-card">
+                                    <children>
+                                        <Label layoutX="10.0" layoutY="14.0" prefHeight="40.0" prefWidth="100.0" text="DAY 7">
+                                            <font>
+                                                <Font name="System Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="10.0" layoutY="53.0" style="&#10;                                            " text="14 EXERCISES" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                                        <Button layoutX="114.0" layoutY="30.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
+                                    </children>
+                                </Pane>
                             </children>
                         </VBox>
-                        <VBox layoutX="704.0" layoutY="182.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
+                        <VBox layoutX="475.0" layoutY="286.0" prefHeight="111.0" prefWidth="218.0" style="-fx-background-color: #f0f0f0; -fx-background-radius: 10; -fx-padding: 10;">
                             <children>
-                                <Label prefHeight="40.0" prefWidth="100.0" text="DAY 10" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="24.0" />
-                                    </font>
-                                </Label>
-                                <Label prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="12 EXERCISES" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
+                                <Pane prefHeight="102.0" prefWidth="191.0" styleClass="metric-card">
+                                    <children>
+                                        <Label layoutX="10.0" layoutY="14.0" prefHeight="40.0" prefWidth="100.0" text="DAY 8">
+                                            <font>
+                                                <Font name="System Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="10.0" layoutY="53.0" style="&#10;                                            " text="14 EXERCISES" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                                        <Button layoutX="114.0" layoutY="30.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
+                                    </children>
+                                </Pane>
                             </children>
                         </VBox>
-                        <VBox layoutX="704.0" layoutY="297.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
+                        <VBox layoutX="475.0" layoutY="402.0" prefHeight="111.0" prefWidth="218.0" style="-fx-background-color: #f0f0f0; -fx-background-radius: 10; -fx-padding: 10;">
                             <children>
-                                <Label prefHeight="40.0" prefWidth="100.0" text="DAY 11" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="24.0" />
-                                    </font>
-                                </Label>
-                                <Label prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="12 EXERCISES" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
+                                <Pane prefHeight="102.0" prefWidth="191.0" styleClass="metric-card">
+                                    <children>
+                                        <Label layoutX="10.0" layoutY="14.0" prefHeight="40.0" prefWidth="100.0" text="DAY 9">
+                                            <font>
+                                                <Font name="System Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="10.0" layoutY="53.0" style="&#10;                                            " text="14 EXERCISES" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                                        <Button layoutX="114.0" layoutY="30.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
+                                    </children>
+                                </Pane>
                             </children>
                         </VBox>
-                        <VBox layoutX="704.0" layoutY="413.0" prefHeight="90.0" prefWidth="203.0" styleClass="metric-card">
+                        <VBox layoutX="700.0" layoutY="171.0" prefHeight="111.0" prefWidth="218.0" style="-fx-background-color: #f0f0f0; -fx-background-radius: 10; -fx-padding: 10;">
                             <children>
-                                <Label prefHeight="40.0" prefWidth="100.0" text="DAY 12" textOverrun="CLIP">
-                                    <font>
-                                        <Font name="System Bold" size="24.0" />
-                                    </font>
-                                </Label>
-                                <Label prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="REST" textOverrun="CLIP" wrapText="true">
-                                    <font>
-                                        <Font name="Arial Bold" size="11.0" />
-                                    </font>
-                                </Label>
+                                <Pane prefHeight="102.0" prefWidth="191.0" styleClass="metric-card">
+                                    <children>
+                                        <Label layoutX="10.0" layoutY="14.0" prefHeight="40.0" prefWidth="100.0" text="DAY 10">
+                                            <font>
+                                                <Font name="System Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="10.0" layoutY="53.0" style="&#10;                                            " text="14 EXERCISES" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                                        <Button layoutX="114.0" layoutY="30.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
+                                    </children>
+                                </Pane>
+                            </children>
+                        </VBox>
+                        <VBox layoutX="700.0" layoutY="283.0" prefHeight="111.0" prefWidth="218.0" style="-fx-background-color: #f0f0f0; -fx-background-radius: 10; -fx-padding: 10;">
+                            <children>
+                                <Pane prefHeight="102.0" prefWidth="191.0" styleClass="metric-card">
+                                    <children>
+                                        <Label layoutX="10.0" layoutY="14.0" prefHeight="40.0" prefWidth="100.0" text="DAY 11">
+                                            <font>
+                                                <Font name="System Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="10.0" layoutY="53.0" style="&#10;                                            " text="14 EXERCISES" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                                        <Button layoutX="114.0" layoutY="30.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
+                                    </children>
+                                </Pane>
+                            </children>
+                        </VBox>
+                        <VBox layoutX="700.0" layoutY="402.0" prefHeight="111.0" prefWidth="218.0" style="-fx-background-color: #f0f0f0; -fx-background-radius: 10; -fx-padding: 10;">
+                            <children>
+                                <Pane prefHeight="102.0" prefWidth="191.0" styleClass="metric-card">
+                                    <children>
+                                        <Label layoutX="10.0" layoutY="14.0" prefHeight="40.0" prefWidth="100.0" text="DAY 12">
+                                            <font>
+                                                <Font name="System Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="10.0" layoutY="53.0" style="&#10;                                            " text="14 EXERCISES" textOverrun="CLIP" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                              <ImageView fitHeight="63.0" fitWidth="70.0" layoutX="121.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/Frame%20(1).png" />
+                                 </image>
+                              </ImageView>
+                                    </children>
+                                </Pane>
                             </children>
                         </VBox>
                     </children>
                 </AnchorPane>
-            </center>
+            </bottom>
         </BorderPane>
     </children>
 </VBox>

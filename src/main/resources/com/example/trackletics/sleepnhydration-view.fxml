@@ -1,14 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.trackletics.SleepnhydrationView"
-            prefHeight="400.0" prefWidth="600.0">
+<VBox prefHeight="554.0" prefWidth="944.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trackletics.SleepnHydrationController">
 
-</AnchorPane>
+    <children>
+        <BorderPane prefHeight="554.0" prefWidth="944.0">
+         <left>
+                <AnchorPane prefHeight="554.0" prefWidth="948.0" BorderPane.alignment="CENTER">
+
+                    <children>
+                        <ImageView fitHeight="159.0" fitWidth="202.0" layoutX="27.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true" styleClass="logo-shadow">
+                            <image>
+                                <Image url="@image/trackleticslandscape.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="34.0" layoutY="136.0" prefHeight="30.0" prefWidth="342.0" styleClass="sign-in-text" text="Monitor your meals &amp; progress." textOverrun="CLIP" wrapText="true">
+                            <font>
+                                <Font name="Arial" size="11.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="34.0" layoutY="97.0" text="Sleep &amp; Hydration">
+                            <font>
+                                <Font name="Arial Nova" size="36.0" />
+                            </font>
+                        </Label>
+                        <TableView editable="true" layoutX="200.0" layoutY="185.0" prefHeight="289.0" prefWidth="424.0" styleClass="table">
+                            <columns>
+                                <TableColumn id="date" prefWidth="83.20001220703125" styleClass="white" text="Date" />
+                                <TableColumn id="sleepDuration" prefWidth="120.39999389648438" styleClass="white" text="Sleep Duration" />
+                                <TableColumn id="bedTime" minWidth="0.0" prefWidth="75.0" styleClass="white" text="Bed time" />
+                                <TableColumn id="wakeTime" prefWidth="105.19992065429688" styleClass="white" text="Wake Time" />
+                            </columns>
+                        </TableView>
+                        <Button layoutX="200.0" layoutY="481.0" prefHeight="30.0" prefWidth="424.0" styleClass="profile-button" text="Log Sleep" textFill="WHITE" />
+                        <BarChart horizontalGridLinesVisible="false" layoutX="627.0" layoutY="150.0" prefHeight="380.0" prefWidth="302.0" title="Weekly Sleep Graph">
+                            <xAxis>
+                                <CategoryAxis side="BOTTOM" />
+                            </xAxis>
+                            <yAxis>
+                                <NumberAxis side="LEFT" />
+                            </yAxis>
+                        </BarChart>
+                        <HBox alignment="CENTER_LEFT" layoutX="309.0" layoutY="44.0" prefHeight="34.0" prefWidth="409.0" spacing="10.0" styleClass="navigation-pill">
+                            <children>
+                                <Hyperlink prefHeight="34.0" prefWidth="53.0" text="HOME" textAlignment="CENTER" textFill="WHITE">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                                    </font></Hyperlink>
+                                <Hyperlink prefHeight="25.0" prefWidth="79.0" text="WORKOUT" textAlignment="CENTER" textFill="WHITE">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                                    </font></Hyperlink>
+                                <Hyperlink prefHeight="25.0" prefWidth="81.0" text="NUTRITION" textAlignment="CENTER" textFill="WHITE">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                                    </font></Hyperlink>
+                                <Hyperlink prefHeight="24.0" prefWidth="143.0" text="SLEEP &amp; HYDRATION" textAlignment="CENTER" textFill="WHITE">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                                    </font></Hyperlink>
+                            </children></HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="728.0" layoutY="44.0" prefHeight="34.0" prefWidth="121.0" spacing="10.0" styleClass="navigation-pill">
+                            <children>
+                                <Pane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <Hyperlink layoutX="2.0" prefHeight="25.0" prefWidth="93.0" text="       SETTINGS" textAlignment="CENTER" textFill="WHITE">
+                                            <font>
+                                                <Font name="Arial Rounded MT Bold" size="12.0" />
+                                            </font>
+                                        </Hyperlink>
+                                        <ImageView fitHeight="24.0" fitWidth="21.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/Frame.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="861.0" layoutY="41.0" prefHeight="39.0" prefWidth="50.0" spacing="10.0" styleClass="navigation-notification">
+                            <children>
+                                <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@image/image%2091%20(1).png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                  <AnchorPane layoutX="34.0" layoutY="186.0" prefHeight="155.0" prefWidth="146.0" styleClass="metric-card" />
+                  <AnchorPane layoutX="34.0" layoutY="355.0" prefHeight="155.0" prefWidth="146.0" styleClass="metric-card" />
+                    </children>
+                </AnchorPane>
+         </left>
+        </BorderPane>
+    </children>
+</VBox>

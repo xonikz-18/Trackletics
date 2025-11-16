@@ -12,8 +12,8 @@
         <AnchorPane prefHeight="554.0" prefWidth="948.0" BorderPane.alignment="CENTER">
           <children>
             <HBox layoutX="210.0" layoutY="222.0" spacing="0" styleClass="toggle-container" />
-            <TextField layoutX="104.0" layoutY="260.0" prefHeight="46.0" prefWidth="397.0" promptText="Email" styleClass="login-border" />
-            <PasswordField layoutX="103.0" layoutY="302.0" prefHeight="46.0" prefWidth="400.0" promptText="Password" styleClass="login-border" />
+            <TextField fx:id="emailField" layoutX="104.0" layoutY="260.0" prefHeight="46.0" prefWidth="397.0" promptText="Email" styleClass="login-border" />
+            <PasswordField fx:id="passwordField" layoutX="103.0" layoutY="302.0" prefHeight="46.0" prefWidth="400.0" promptText="Password" styleClass="login-border" />
 
             <Button fx:id="signinBtn" layoutX="104.0" layoutY="344.0" onAction="#handleSignInClick" prefHeight="22.0" prefWidth="297.0" styleClass="profile-button" text="Sign In" textFill="WHITE" />
             <Pane layoutX="239.0" layoutY="8.0" prefHeight="200.0" prefWidth="200.0" />

@@ -24,19 +24,19 @@
                         </Label>
                         <HBox alignment="CENTER_LEFT" layoutX="309.0" layoutY="44.0" prefHeight="34.0" prefWidth="409.0" spacing="10.0" styleClass="navigation-pill">
                             <children>
-                                <Hyperlink prefHeight="34.0" prefWidth="53.0" text="HOME" textAlignment="CENTER" textFill="WHITE">
+                                <Hyperlink fx:id="homeNavBtn" onAction="#handlehomeNavClick" prefHeight="34.0" prefWidth="53.0" text="HOME" textAlignment="CENTER" textFill="WHITE">
                                     <font>
                                         <Font name="Arial Rounded MT Bold" size="12.0" />
                                     </font></Hyperlink>
-                                <Hyperlink prefHeight="25.0" prefWidth="79.0" text="WORKOUT" textAlignment="CENTER" textFill="WHITE">
+                                <Hyperlink fx:id="workoutNavBtn" onAction="#handleworkoutNavClick" prefHeight="25.0" prefWidth="79.0" text="WORKOUT" textAlignment="CENTER" textFill="WHITE">
                                     <font>
                                         <Font name="Arial Rounded MT Bold" size="12.0" />
                                     </font></Hyperlink>
-                                <Hyperlink prefHeight="25.0" prefWidth="81.0" text="NUTRITION" textAlignment="CENTER" textFill="WHITE">
+                                <Hyperlink fx:id="nutritionNavBtn" onAction="#handlenutritionNavClick" prefHeight="25.0" prefWidth="81.0" text="NUTRITION" textAlignment="CENTER" textFill="WHITE">
                                     <font>
                                         <Font name="Arial Rounded MT Bold" size="12.0" />
                                     </font></Hyperlink>
-                                <Hyperlink prefHeight="24.0" prefWidth="143.0" text="SLEEP &amp; HYDRATION" textAlignment="CENTER" textFill="WHITE">
+                                <Hyperlink fx:id="sleepnhydrationNavBtn" onAction="#handlesleepnhydrationNavClick" prefHeight="24.0" prefWidth="143.0" text="SLEEP &amp; HYDRATION" textAlignment="CENTER" textFill="WHITE">
                                     <font>
                                         <Font name="Arial Rounded MT Bold" size="12.0" />
                                     </font></Hyperlink>
@@ -87,7 +87,7 @@
                                     <Font name="System Bold" size="8.0" />
                                  </font>
                               </Label>
-                              <Button layoutX="114.0" layoutY="64.0" prefHeight="17.0" prefWidth="112.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="Share you achievement">
+                              <Button layoutX="114.0" layoutY="64.0" prefHeight="17.0" prefWidth="112.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20;" text="Share you achievement">
                                  <font>
                                     <Font size="8.0" />
                                  </font>
@@ -130,17 +130,17 @@
                                     <Font size="14.0" />
                                  </font>
                               </Label>
-                                    <Button layoutX="11.0" layoutY="86.0" prefHeight="15.0" prefWidth="67.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="Track Sleep">
+                                    <Button fx:id="quickSleepBtn" layoutX="11.0" layoutY="86.0" onAction="#handleQuickSleepClick" prefHeight="15.0" prefWidth="67.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20;" text="Sleep &amp; Hydration">
+                                 <font>
+                                    <Font size="7.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="quickMealBtn" layoutX="11.0" layoutY="189.0" onAction="#handleQuickMealClick" prefHeight="14.0" prefWidth="67.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20;" text="Log Meal">
                                  <font>
                                     <Font size="8.0" />
                                  </font>
                               </Button>
-                              <Button layoutX="11.0" layoutY="189.0" prefHeight="14.0" prefWidth="67.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="Log Meal">
-                                 <font>
-                                    <Font size="8.0" />
-                                 </font>
-                              </Button>
-                              <Button layoutX="7.0" layoutY="290.0" prefHeight="15.0" prefWidth="75.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="Start Workout">
+                              <Button fx:id="quickWorkoutBtn" layoutX="7.0" layoutY="290.0" onAction="#handleQuickWorkoutClick" prefHeight="15.0" prefWidth="75.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20;" text="Start Workout">
                                  <font>
                                     <Font size="8.0" />
                                  </font>

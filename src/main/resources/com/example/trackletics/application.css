@@ -132,13 +132,6 @@
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3);
 }
 
-.nav-pill:hover{
-    -fx-padding: 5 15 5 15;
-    -fx-background-color: #000000;
-    -fx-background-radius: 15;
-    -fx-border-radius: 15;
-}
-
 .navigation-notification{
     -fx-padding: 5 15 5 15;
     -fx-background-color: #F5F5F5;
@@ -179,4 +172,19 @@
     -fx-background-radius: 10;
     -fx-border-radius: 10;
     -fx-background-color: #E8E8E8
+}
+
+.nav-pill:hover{
+    -fx-background-color: #000000;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3);
+}
+
+.setting-default {
+    -fx-background-color: transparent;
+}
+.setting:hover {
+    -fx-background-color: #EEE1FF;
+    -fx-background-radius: 5;
 }

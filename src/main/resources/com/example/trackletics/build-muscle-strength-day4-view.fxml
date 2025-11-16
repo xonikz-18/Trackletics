@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="554.0" prefWidth="944.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trackletics.BuildMuscleStrengthDay6Controller">
+<VBox prefHeight="554.0" prefWidth="944.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trackletics.BuildMuscleStrengthDay4Controller">
 
     <children>
         <BorderPane prefHeight="554.0" prefWidth="944.0">
@@ -51,12 +52,28 @@
                                 </Pane>
                             </children></VBox>
                         <HBox alignment="CENTER_LEFT" layoutX="309.0" layoutY="44.0" prefHeight="34.0" prefWidth="409.0" spacing="10.0" styleClass="navigation-pill">
-                     <children>
-                         <Button fx:id="homeNavBtn" layoutX="25.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleHomeNavClick" prefHeight="26.0" prefWidth="54.0" style="-fx-background-color: trsnsparent;" text="HOME" textFill="WHITE" />
-                         <Button fx:id="nutritionNavBtn" mnemonicParsing="false" onAction="#handleNutritionNavClick" prefHeight="26.0" prefWidth="81.0" style="-fx-background-color: trsnsparent;" text="NUTRITION" textFill="WHITE" />
-                         <Button fx:id="workoutNavBtn" layoutX="122.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleWorkoutNavClick" prefHeight="26.0" prefWidth="77.0" style="-fx-background-color: trsnsparent;" text="WORKOUT" textFill="WHITE" />
-                         <Button fx:id="sleepnhydrationNavBtn" layoutX="219.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleSleepnhydrationNavClick" prefHeight="26.0" prefWidth="133.0" style="-fx-background-color: trsnsparent;" text="SLEEP &amp; HYDRATION" textFill="WHITE" />
-                     </children></HBox>
+                            <children>
+                                <Button fx:id="homeNavBtn" layoutX="25.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleHomeNavClick" prefHeight="35.0" prefWidth="54.0" text="HOME" textFill="WHITE">
+                                    <styleClass>
+                                        <String fx:value="setting-default" />
+                                        <String fx:value="nav-pill" />
+                                    </styleClass></Button>
+                                <Button fx:id="nutritionNavBtn" mnemonicParsing="false" onAction="#handleNutritionNavClick" prefHeight="26.0" prefWidth="81.0" text="NUTRITION" textFill="WHITE">
+                                    <styleClass>
+                                        <String fx:value="setting-default" />
+                                        <String fx:value="nav-pill" />
+                                    </styleClass></Button>
+                                <Button fx:id="workoutNavBtn" layoutX="122.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleWorkoutNavClick" prefHeight="26.0" prefWidth="77.0" text="WORKOUT" textFill="WHITE">
+                                    <styleClass>
+                                        <String fx:value="setting-default" />
+                                        <String fx:value="nav-pill" />
+                                    </styleClass></Button>
+                                <Button fx:id="sleepnhydrationNavBtn" layoutX="219.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleSleepnhydrationNavClick" prefHeight="26.0" prefWidth="133.0" text="SLEEP &amp; HYDRATION" textFill="WHITE">
+                                    <styleClass>
+                                        <String fx:value="setting-default" />
+                                        <String fx:value="nav-pill" />
+                                    </styleClass></Button>
+                            </children></HBox>
                         <HBox alignment="CENTER_LEFT" layoutX="728.0" layoutY="44.0" prefHeight="34.0" prefWidth="121.0" spacing="10.0" styleClass="navigation-pill">
                             <children>
                                 <Pane prefHeight="200.0" prefWidth="200.0">
@@ -66,7 +83,11 @@
                                                 <Image url="@image/Frame.png" />
                                             </image>
                                         </ImageView>
-                                        <Button fx:id="settingsNavBtn" layoutX="-11.0" mnemonicParsing="false" onAction="#handleSettingsNavClick" prefHeight="26.0" prefWidth="113.0" style="-fx-background-color: trsnsparent;" text="       SETTINGS" textFill="WHITE" />
+                                        <Button fx:id="settingsNavBtn" layoutX="-11.0" mnemonicParsing="false" onAction="#handleSettingsNavClick" prefHeight="26.0" prefWidth="113.0" text="       SETTINGS" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="setting-default" />
+                                    <String fx:value="nav-pill" />
+                                 </styleClass></Button>
                                     </children>
                                 </Pane>
                             </children>

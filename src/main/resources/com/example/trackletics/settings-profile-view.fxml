@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
@@ -14,22 +15,33 @@
                 <AnchorPane prefHeight="554.0" prefWidth="948.0" BorderPane.alignment="CENTER">
                     <children>
                         <HBox layoutX="210.0" layoutY="222.0" spacing="0" styleClass="toggle-container" />
-                        <ImageView fitHeight="133.0" fitWidth="178.0" layoutX="25.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true" styleClass="logo-shadow">
+                        <ImageView fitHeight="159.0" fitWidth="202.0" layoutX="27.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true" styleClass="logo-shadow">
                             <image>
                                 <Image url="@image/trackleticslandscape.png" />
                             </image>
                         </ImageView>
-                        <TextField layoutX="580.0" layoutY="140.0" prefHeight="34.0" prefWidth="310.0" promptText="Enter your name" style="-fx-background-color: #DCDCDC;" styleClass="log-border" AnchorPane.rightAnchor="53.60000000000002">
-                            <cursor>
-                                <Cursor fx:constant="DEFAULT" />
-                            </cursor>
-                        </TextField>
                         <HBox alignment="CENTER_LEFT" layoutX="309.0" layoutY="44.0" prefHeight="34.0" prefWidth="409.0" spacing="10.0" styleClass="navigation-pill">
                             <children>
-                                <Button fx:id="homeNavBtn" layoutX="25.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleHomeNavClick" prefHeight="26.0" prefWidth="54.0" style="-fx-background-color: trsnsparent;" text="HOME" textFill="WHITE" />
-                                <Button fx:id="nutritionNavBtn" mnemonicParsing="false" onAction="#handleNutritionNavClick" prefHeight="26.0" prefWidth="81.0" style="-fx-background-color: trsnsparent;" text="NUTRITION" textFill="WHITE" />
-                                <Button fx:id="workoutNavBtn" layoutX="122.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleWorkoutNavClick" prefHeight="26.0" prefWidth="77.0" style="-fx-background-color: trsnsparent;" text="WORKOUT" textFill="WHITE" />
-                                <Button fx:id="sleepnhydrationNavBtn" layoutX="219.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleSleepnhydrationNavClick" prefHeight="26.0" prefWidth="133.0" style="-fx-background-color: trsnsparent;" text="SLEEP &amp; HYDRATION" textFill="WHITE" />
+                                <Button fx:id="homeNavBtn" layoutX="25.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleHomeNavClick" prefHeight="35.0" prefWidth="54.0" text="HOME" textFill="WHITE">
+                                    <styleClass>
+                                        <String fx:value="setting-default" />
+                                        <String fx:value="nav-pill" />
+                                    </styleClass></Button>
+                                <Button fx:id="nutritionNavBtn" mnemonicParsing="false" onAction="#handleNutritionNavClick" prefHeight="26.0" prefWidth="81.0" text="NUTRITION" textFill="WHITE">
+                                    <styleClass>
+                                        <String fx:value="setting-default" />
+                                        <String fx:value="nav-pill" />
+                                    </styleClass></Button>
+                                <Button fx:id="workoutNavBtn" layoutX="122.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleWorkoutNavClick" prefHeight="26.0" prefWidth="77.0" text="WORKOUT" textFill="WHITE">
+                                    <styleClass>
+                                        <String fx:value="setting-default" />
+                                        <String fx:value="nav-pill" />
+                                    </styleClass></Button>
+                                <Button fx:id="sleepnhydrationNavBtn" layoutX="219.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleSleepnhydrationNavClick" prefHeight="26.0" prefWidth="133.0" text="SLEEP &amp; HYDRATION" textFill="WHITE">
+                                    <styleClass>
+                                        <String fx:value="setting-default" />
+                                        <String fx:value="nav-pill" />
+                                    </styleClass></Button>
                             </children></HBox>
                         <HBox alignment="CENTER_LEFT" layoutX="728.0" layoutY="44.0" prefHeight="34.0" prefWidth="121.0" spacing="10.0" styleClass="navigation-pill">
                             <children>
@@ -54,27 +66,11 @@
                                 </ImageView>
                             </children>
                         </HBox>
-                        <Button layoutX="580.0" layoutY="463.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="310.0" style="-fx-text-fill: FFFFFF;" styleClass="profile-button" text="Change" textFill="WHITE" />
                         <Label layoutX="585.0" layoutY="117.0" prefHeight="30.0" prefWidth="140.0" styleClass="sign-in-text" text="Name:" textOverrun="CLIP" wrapText="true">
                             <font>
                                 <Font name="Arial" size="12.0" />
                             </font>
                         </Label>
-                  <TextField layoutX="580.0" layoutY="205.0" prefHeight="34.0" prefWidth="310.0" promptText="Enter your age" style="-fx-background-color: #DCDCDC;" styleClass="log-border">
-                     <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                     </cursor>
-                  </TextField>
-                  <TextField layoutX="580.0" layoutY="353.0" prefHeight="34.0" prefWidth="310.0" promptText="Enter your email" style="-fx-background-color: #DCDCDC;" styleClass="log-border">
-                     <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                     </cursor>
-                  </TextField>
-                  <TextField layoutX="580.0" layoutY="421.0" prefHeight="34.0" prefWidth="310.0" promptText="Enter your password" style="-fx-background-color: #DCDCDC;" styleClass="log-border">
-                     <cursor>
-                        <Cursor fx:constant="DEFAULT" />
-                     </cursor>
-                  </TextField>
                   <Label layoutX="585.0" layoutY="181.0" prefHeight="30.0" prefWidth="140.0" styleClass="sign-in-text" text="Age:" textOverrun="CLIP" wrapText="true">
                      <font>
                         <Font name="Arial" size="12.0" />
@@ -97,7 +93,7 @@
                         <Font name="Arial" size="12.0" />
                      </font>
                   </Label>
-                  <TextField alignment="TOP_LEFT" layoutX="216.0" layoutY="358.0" prefHeight="151.0" prefWidth="338.0" promptText="Type bio." style="-fx-background-color: #DCDCDC;" styleClass="log-border">
+                  <TextField alignment="TOP_LEFT" layoutX="235.0" layoutY="358.0" prefHeight="102.0" prefWidth="308.0" promptText="Type bio." style="-fx-background-color: #DCDCDC;" styleClass="log-border">
                      <cursor>
                         <Cursor fx:constant="DEFAULT" />
                      </cursor>
@@ -107,26 +103,6 @@
                                 <Font name="Arial Nova" size="36.0" />
                             </font>
                         </Label>
-                  <Label layoutX="67.0" layoutY="173.0" prefHeight="30.0" prefWidth="59.0" styleClass="sign-in-text" text="Profile" textOverrun="CLIP" wrapText="true">
-                     <font>
-                        <Font name="Arial" size="19.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="66.0" layoutY="217.0" prefHeight="30.0" prefWidth="140.0" styleClass="sign-in-text" text="Privacy Policy" textOverrun="CLIP" wrapText="true">
-                     <font>
-                        <Font name="Arial" size="19.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="66.0" layoutY="262.0" prefHeight="30.0" prefWidth="82.0" styleClass="sign-in-text" text="About Us" textOverrun="CLIP" wrapText="true">
-                     <font>
-                        <Font name="Arial" size="19.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="65.0" layoutY="304.0" prefHeight="26.0" prefWidth="71.0" styleClass="sign-in-text" text="Log Out" textOverrun="CLIP" wrapText="true">
-                     <font>
-                        <Font name="Arial" size="19.0" />
-                     </font>
-                  </Label>
                   <ImageView fitHeight="235.0" fitWidth="260.0" layoutX="258.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@image/Group%2057.png" />
@@ -138,29 +114,92 @@
                      </font>
                   </Label>
                   <Button layoutX="420.0" layoutY="40.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: transparent;" />
-                  <ImageView fitHeight="27.0" fitWidth="32.0" layoutX="28.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@image/Frame%20(6).png" />
-                     </image>
-                  </ImageView>
                   <Button layoutX="335.0" layoutY="40.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
-                  <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="28.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@image/Frame%20(7).png" />
-                     </image>
-                  </ImageView>
                   <Button layoutX="283.0" layoutY="53.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
-                  <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="26.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@image/Frame%20(8).png" />
-                     </image>
-                  </ImageView>
                   <Button layoutX="291.0" layoutY="40.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
-                  <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="30.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@image/Group%2084.png" />
-                     </image>
-                  </ImageView>
+                  <Button fx:id="profileBtn" layoutX="-65.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleProfileClick" prefHeight="46.0" prefWidth="291.0" text="Profile">
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/Group%2084.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="setting-default" />
+                        <String fx:value="setting" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="privacyPolicyBtn" layoutY="210.0" mnemonicParsing="false" onAction="#handlePrivacyPolicyClick" prefHeight="46.0" prefWidth="226.0" text="Privacy Policy" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/Frame%20(6).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="setting-default" />
+                        <String fx:value="setting" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="aboutUsBtn" layoutX="-37.0" layoutY="256.0" mnemonicParsing="false" onAction="#handleAboutUsClick" prefHeight="46.0" prefWidth="263.0" text="About Us">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/Frame%20(7).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="setting-default" />
+                        <String fx:value="setting" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="logOutBtn" layoutX="-61.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleLogOutClick" prefHeight="46.0" prefWidth="288.0" text=" Log Out">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/Frame%20(8).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="setting-default" />
+                        <String fx:value="setting" />
+                     </styleClass>
+                  </Button>
+                  <Label layoutX="582.0" layoutY="142.0" prefHeight="32.0" prefWidth="323.0" style="-fx-background-color: #DCDCDC;" styleClass="login-border">
+                     <font>
+                        <Font size="22.0" />
+                     </font></Label>
+                  <Label layoutX="582.0" layoutY="208.0" prefHeight="32.0" prefWidth="323.0" style="-fx-background-color: #DCDCDC;" styleClass="login-border">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="581.0" layoutY="356.0" prefHeight="32.0" prefWidth="323.0" style="-fx-background-color: #DCDCDC;" styleClass="login-border">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="580.0" layoutY="421.0" prefHeight="32.0" prefWidth="323.0" style="-fx-background-color: #DCDCDC;" styleClass="login-border">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
                     </children>
                 </AnchorPane>
             </center>

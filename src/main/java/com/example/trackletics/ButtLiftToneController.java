@@ -89,4 +89,164 @@ public class ButtLiftToneController {
         stage.setScene(scene);
         stage.show();
     }
+
+    @FXML
+    private Button dayOneButtBtn;
+
+    @FXML
+    private void handleDayOneButtClick () throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("butt-lift-tone-day1-view.fxml"));
+        Scene scene = new Scene(loader.load());
+
+        String styleCss = this.getClass().getResource("application.css").toExternalForm();
+        scene.getStylesheets().add(styleCss);
+
+        Stage stage = (Stage) dayOneButtBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    private Button dayTwoButtBtn;
+
+    @FXML
+    private void handleDayTwoButtClick () throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("butt-lift-tone-day2-view.fxml"));
+        Scene scene = new Scene(loader.load());
+
+        String styleCss = this.getClass().getResource("application.css").toExternalForm();
+        scene.getStylesheets().add(styleCss);
+
+        Stage stage = (Stage) dayTwoButtBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    private Button dayThreeButtBtn;
+
+    @FXML
+    private void handleDayThreeButtClick () throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("butt-lift-tone-day3-view.fxml"));
+        Scene scene = new Scene(loader.load());
+
+        String styleCss = this.getClass().getResource("application.css").toExternalForm();
+        scene.getStylesheets().add(styleCss);
+
+        Stage stage = (Stage) dayThreeButtBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    private Button dayFourButtBtn;
+
+    @FXML
+    private void handleDayFourButtClick () throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("butt-lift-tone-day4-view.fxml"));
+        Scene scene = new Scene(loader.load());
+
+        String styleCss = this.getClass().getResource("application.css").toExternalForm();
+        scene.getStylesheets().add(styleCss);
+
+        Stage stage = (Stage) dayFourButtBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    private Button dayFiveButtBtn;
+
+    @FXML
+    private void handleDayFiveButtClick () throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("butt-lift-tone-day5-view.fxml"));
+        Scene scene = new Scene(loader.load());
+
+        String styleCss = this.getClass().getResource("application.css").toExternalForm();
+        scene.getStylesheets().add(styleCss);
+
+        Stage stage = (Stage) dayFiveButtBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    private Button daySevenButtBtn;
+
+    @FXML
+    private void handleDaySevenButtClick () throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("butt-lift-tone-day7-view.fxml"));
+        Scene scene = new Scene(loader.load());
+
+        String styleCss = this.getClass().getResource("application.css").toExternalForm();
+        scene.getStylesheets().add(styleCss);
+
+        Stage stage = (Stage) daySevenButtBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    private Button dayEightButtBtn;
+
+    @FXML
+    private void handleDayEightButtClick () throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("butt-lift-tone-day8-view.fxml"));
+        Scene scene = new Scene(loader.load());
+
+        String styleCss = this.getClass().getResource("application.css").toExternalForm();
+        scene.getStylesheets().add(styleCss);
+
+        Stage stage = (Stage) dayEightButtBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    private Button dayNineButtBtn;
+
+    @FXML
+    private void handleDayNineButtClick () throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("butt-lift-tone-day9-view.fxml"));
+        Scene scene = new Scene(loader.load());
+
+        String styleCss = this.getClass().getResource("application.css").toExternalForm();
+        scene.getStylesheets().add(styleCss);
+
+        Stage stage = (Stage) dayNineButtBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    private Button dayTenButtBtn;
+
+    @FXML
+    private void handleDayTenButtClick () throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("butt-lift-tone-day10-view.fxml"));
+        Scene scene = new Scene(loader.load());
+
+        String styleCss = this.getClass().getResource("application.css").toExternalForm();
+        scene.getStylesheets().add(styleCss);
+
+        Stage stage = (Stage) dayTenButtBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    private Button dayElevenButtBtn;
+
+    @FXML
+    private void handleDayElevenButtClick () throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("butt-lift-tone-day11-view.fxml"));
+        Scene scene = new Scene(loader.load());
+
+        String styleCss = this.getClass().getResource("application.css").toExternalForm();
+        scene.getStylesheets().add(styleCss);
+
+        Stage stage = (Stage) dayElevenButtBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
 }

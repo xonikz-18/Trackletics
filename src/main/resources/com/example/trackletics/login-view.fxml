@@ -14,6 +14,11 @@
             <HBox layoutX="210.0" layoutY="222.0" spacing="0" styleClass="toggle-container" />
             <TextField fx:id="emailField" layoutX="104.0" layoutY="260.0" prefHeight="46.0" prefWidth="397.0" promptText="Email" styleClass="login-border" />
             <PasswordField fx:id="passwordField" layoutX="103.0" layoutY="302.0" prefHeight="46.0" prefWidth="400.0" promptText="Password" styleClass="login-border" />
+                  <ImageView fitHeight="554.0" fitWidth="756.0" layoutX="196.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/design.png" />
+                     </image>
+                  </ImageView>
 
             <Button fx:id="signinBtn" layoutX="104.0" layoutY="344.0" onAction="#handleSignInClick" prefHeight="22.0" prefWidth="297.0" styleClass="profile-button" text="Sign In" textFill="WHITE" />
             <Pane layoutX="239.0" layoutY="8.0" prefHeight="200.0" prefWidth="200.0" />
@@ -32,11 +37,6 @@
                         <Font size="10.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="563.0" fitWidth="724.0" layoutX="228.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@image/design.png" />
-                     </image>
-                  </ImageView>
             <Label layoutX="120.0" layoutY="222.0" prefHeight="23.0" prefWidth="268.0" styleClass="sign-in-text" text="Sign in to continue tracking your health and fitness journey.">
               <font>
                 <Font size="10.0" />

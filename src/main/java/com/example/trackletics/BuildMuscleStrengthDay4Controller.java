@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class BuildMuscleStrengthDay6Controller {
+public class BuildMuscleStrengthDay4Controller {
 
     @FXML
     private Button homeNavBtn;

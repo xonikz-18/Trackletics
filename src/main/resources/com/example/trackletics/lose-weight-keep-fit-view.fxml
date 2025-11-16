@@ -5,6 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
+<?import java.lang.String?>
 <VBox prefHeight="554.0" prefWidth="944.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trackletics.LoseWeightKeepFitController">
 
     <children>
@@ -54,10 +55,26 @@
                         </VBox>
                         <HBox alignment="CENTER_LEFT" layoutX="309.0" layoutY="44.0" prefHeight="34.0" prefWidth="409.0" spacing="10.0" styleClass="navigation-pill">
                             <children>
-                                <Button fx:id="homeNavBtn" layoutX="25.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleHomeNavClick" prefHeight="26.0" prefWidth="54.0" style="-fx-background-color: trsnsparent;" text="HOME" textFill="WHITE" />
-                                <Button fx:id="nutritionNavBtn" mnemonicParsing="false" onAction="#handleNutritionNavClick" prefHeight="26.0" prefWidth="81.0" style="-fx-background-color: trsnsparent;" text="NUTRITION" textFill="WHITE" />
-                                <Button fx:id="workoutNavBtn" layoutX="122.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleWorkoutNavClick" prefHeight="26.0" prefWidth="77.0" style="-fx-background-color: trsnsparent;" text="WORKOUT" textFill="WHITE" />
-                                <Button fx:id="sleepnhydrationNavBtn" layoutX="219.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleSleepnhydrationNavClick" prefHeight="26.0" prefWidth="133.0" style="-fx-background-color: trsnsparent;" text="SLEEP &amp; HYDRATION" textFill="WHITE" />
+                                <Button fx:id="homeNavBtn" layoutX="25.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleHomeNavClick" prefHeight="35.0" prefWidth="54.0" text="HOME" textFill="WHITE">
+                                    <styleClass>
+                                        <String fx:value="setting-default" />
+                                        <String fx:value="nav-pill" />
+                                    </styleClass></Button>
+                                <Button fx:id="nutritionNavBtn" mnemonicParsing="false" onAction="#handleNutritionNavClick" prefHeight="26.0" prefWidth="81.0" text="NUTRITION" textFill="WHITE">
+                                    <styleClass>
+                                        <String fx:value="setting-default" />
+                                        <String fx:value="nav-pill" />
+                                    </styleClass></Button>
+                                <Button fx:id="workoutNavBtn" layoutX="122.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleWorkoutNavClick" prefHeight="26.0" prefWidth="77.0" text="WORKOUT" textFill="WHITE">
+                                    <styleClass>
+                                        <String fx:value="setting-default" />
+                                        <String fx:value="nav-pill" />
+                                    </styleClass></Button>
+                                <Button fx:id="sleepnhydrationNavBtn" layoutX="219.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleSleepnhydrationNavClick" prefHeight="26.0" prefWidth="133.0" text="SLEEP &amp; HYDRATION" textFill="WHITE">
+                                    <styleClass>
+                                        <String fx:value="setting-default" />
+                                        <String fx:value="nav-pill" />
+                                    </styleClass></Button>
                             </children></HBox>
                         <HBox alignment="CENTER_LEFT" layoutX="728.0" layoutY="44.0" prefHeight="34.0" prefWidth="121.0" spacing="10.0" styleClass="navigation-pill">
                             <children>
@@ -102,7 +119,7 @@
                                                 -fx-text-fill: #555;
                                             </style>
                                         </Label>
-                                        <Button layoutX="114.0" layoutY="30.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
+                                        <Button fx:id="dayOneWeightBtn" layoutX="114.0" layoutY="30.0" onAction="#handleDayOneWeightClick" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
                                     </children>
                                 </Pane>
                             </children>
@@ -121,7 +138,7 @@
                                                 <Font name="Arial Bold" size="11.0" />
                                             </font>
                                         </Label>
-                                        <Button layoutX="114.0" layoutY="30.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
+                                        <Button fx:id="dayTwoWeightBtn" layoutX="114.0" layoutY="30.0" onAction="#handleDayTwoWeightClick" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
                                     </children>
                                 </Pane>
                             </children>
@@ -140,7 +157,7 @@
                                                 <Font name="Arial Bold" size="11.0" />
                                             </font>
                                         </Label>
-                                        <Button layoutX="114.0" layoutY="30.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
+                                        <Button fx:id="dayThreeWeightBtn" layoutX="114.0" layoutY="30.0" onAction="#handleDayThreeWeightClick" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
                                     </children>
                                 </Pane>
                             </children>
@@ -159,7 +176,7 @@
                                                 <Font name="Arial Bold" size="11.0" />
                                             </font>
                                         </Label>
-                                        <Button layoutX="114.0" layoutY="30.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
+                                        <Button fx:id="dayFourWeightBtn" layoutX="114.0" layoutY="30.0" onAction="#handleDayFourWeightClick" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
                                     </children>
                                 </Pane>
                             </children>
@@ -178,7 +195,7 @@
                                                 <Font name="Arial Bold" size="11.0" />
                                             </font>
                                         </Label>
-                                        <Button layoutX="114.0" layoutY="30.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
+                                        <Button fx:id="dayFiveWeightBtn" layoutX="114.0" layoutY="30.0" onAction="#handleDayFiveWeightClick" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
                                     </children>
                                 </Pane>
                             </children>
@@ -197,6 +214,11 @@
                                                 <Font name="Arial Bold" size="11.0" />
                                             </font>
                                         </Label>
+                              <ImageView fitHeight="88.0" fitWidth="68.0" layoutX="118.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/Frame%20(1).png" />
+                                 </image>
+                              </ImageView>
                                     </children>
                                 </Pane>
                             </children>
@@ -215,7 +237,7 @@
                                                 <Font name="Arial Bold" size="11.0" />
                                             </font>
                                         </Label>
-                                        <Button layoutX="114.0" layoutY="30.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
+                                        <Button fx:id="daySevenWeightBtn" layoutX="114.0" layoutY="30.0" onAction="#handleDaySevenWeightClick" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
                                     </children>
                                 </Pane>
                             </children>
@@ -234,7 +256,7 @@
                                                 <Font name="Arial Bold" size="11.0" />
                                             </font>
                                         </Label>
-                                        <Button layoutX="114.0" layoutY="30.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
+                                        <Button fx:id="dayEightWeightBtn" layoutX="114.0" layoutY="30.0" onAction="#handleDayEightWeightClick" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
                                     </children>
                                 </Pane>
                             </children>
@@ -253,7 +275,7 @@
                                                 <Font name="Arial Bold" size="11.0" />
                                             </font>
                                         </Label>
-                                        <Button layoutX="114.0" layoutY="30.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
+                                        <Button fx:id="dayNineWeightBtn" layoutX="114.0" layoutY="30.0" onAction="#handleDayNineWeightClick" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
                                     </children>
                                 </Pane>
                             </children>
@@ -272,7 +294,7 @@
                                                 <Font name="Arial Bold" size="11.0" />
                                             </font>
                                         </Label>
-                                        <Button layoutX="114.0" layoutY="30.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
+                                        <Button fx:id="dayTenWeightBtn" layoutX="114.0" layoutY="30.0" onAction="#handleDayTenWeightClick" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
                                     </children>
                                 </Pane>
                             </children>
@@ -291,7 +313,7 @@
                                                 <Font name="Arial Bold" size="11.0" />
                                             </font>
                                         </Label>
-                                        <Button layoutX="114.0" layoutY="30.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
+                                        <Button fx:id="dayElevenWeightBtn" layoutX="114.0" layoutY="30.0" onAction="#handleDayElevenWeightClick" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #5A2A83; -fx-text-fill: white; -fx-background-radius: 20; -fx-font-weight: bold;" text="START" />
                                     </children>
                                 </Pane>
                             </children>
@@ -310,6 +332,11 @@
                                                 <Font name="Arial Bold" size="11.0" />
                                             </font>
                                         </Label>
+                              <ImageView fitHeight="88.0" fitWidth="68.0" layoutX="126.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/Frame%20(1).png" />
+                                 </image>
+                              </ImageView>
                                     </children>
                                 </Pane>
                             </children>

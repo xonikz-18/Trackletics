@@ -127,7 +127,7 @@ public class WorkoutController {
 
     @FXML
     private void handleWeightWorkoutClick () throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("lose-weight-keep-fit.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("lose-weight-keep-fit-view.fxml"));
         Scene scene = new Scene(loader.load());
 
         String styleCss = this.getClass().getResource("application.css").toExternalForm();

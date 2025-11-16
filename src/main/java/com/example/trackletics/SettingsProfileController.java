@@ -89,4 +89,68 @@ public class SettingsProfileController {
         stage.setScene(scene);
         stage.show();
     }
+
+    @FXML
+    private Button profileBtn;
+
+    @FXML
+    private void handleProfileClick () throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("settings-profile-view.fxml"));
+        Scene scene = new Scene(loader.load());
+
+        String styleCss = this.getClass().getResource("application.css").toExternalForm();
+        scene.getStylesheets().add(styleCss);
+
+        Stage stage = (Stage) profileBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    private Button privacyPolicyBtn;
+
+    @FXML
+    private void handlePrivacyPolicyClick () throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("settings-privacy-policy-view.fxml"));
+        Scene scene = new Scene(loader.load());
+
+        String styleCss = this.getClass().getResource("application.css").toExternalForm();
+        scene.getStylesheets().add(styleCss);
+
+        Stage stage = (Stage) privacyPolicyBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    private Button aboutUsBtn;
+
+    @FXML
+    private void handleAboutUsClick () throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("settings-aboutus-view.fxml"));
+        Scene scene = new Scene(loader.load());
+
+        String styleCss = this.getClass().getResource("application.css").toExternalForm();
+        scene.getStylesheets().add(styleCss);
+
+        Stage stage = (Stage) aboutUsBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    private Button logOutBtn;
+
+    @FXML
+    private void handleLogOutClick () throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("login-view.fxml"));
+        Scene scene = new Scene(loader.load());
+
+        String styleCss = this.getClass().getResource("application.css").toExternalForm();
+        scene.getStylesheets().add(styleCss);
+
+        Stage stage = (Stage) logOutBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
 }

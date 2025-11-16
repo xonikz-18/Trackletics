@@ -5,6 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
+<?import java.lang.String?>
 <VBox prefHeight="554.0" prefWidth="944.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trackletics.SettingsPrivacyPolicyController">
 
     <children>
@@ -12,7 +13,7 @@
             <center>
                 <AnchorPane prefHeight="561.0" prefWidth="944.0" BorderPane.alignment="CENTER">
                     <children>
-                        <ImageView fitHeight="133.0" fitWidth="178.0" layoutX="25.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true" styleClass="logo-shadow">
+                        <ImageView fitHeight="159.0" fitWidth="202.0" layoutX="27.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true" styleClass="logo-shadow">
                             <image>
                                 <Image url="@image/trackleticslandscape.png" />
                             </image>
@@ -52,6 +53,116 @@
                                 </font>
                             </Label>
                         </Label>
+                        <HBox alignment="CENTER_LEFT" layoutX="309.0" layoutY="44.0" prefHeight="34.0" prefWidth="409.0" spacing="10.0" styleClass="navigation-pill">
+                            <children>
+                                <Button fx:id="homeNavBtn" layoutX="25.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleHomeNavClick" prefHeight="35.0" prefWidth="54.0" text="HOME" textFill="WHITE">
+                                    <styleClass>
+                                        <String fx:value="setting-default" />
+                                        <String fx:value="nav-pill" />
+                                    </styleClass></Button>
+                                <Button fx:id="nutritionNavBtn" mnemonicParsing="false" onAction="#handleNutritionNavClick" prefHeight="26.0" prefWidth="81.0" text="NUTRITION" textFill="WHITE">
+                                    <styleClass>
+                                        <String fx:value="setting-default" />
+                                        <String fx:value="nav-pill" />
+                                    </styleClass></Button>
+                                <Button fx:id="workoutNavBtn" layoutX="122.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleWorkoutNavClick" prefHeight="26.0" prefWidth="77.0" text="WORKOUT" textFill="WHITE">
+                                    <styleClass>
+                                        <String fx:value="setting-default" />
+                                        <String fx:value="nav-pill" />
+                                    </styleClass></Button>
+                                <Button fx:id="sleepnhydrationNavBtn" layoutX="219.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleSleepnhydrationNavClick" prefHeight="26.0" prefWidth="133.0" text="SLEEP &amp; HYDRATION" textFill="WHITE">
+                                    <styleClass>
+                                        <String fx:value="setting-default" />
+                                        <String fx:value="nav-pill" />
+                                    </styleClass></Button>
+                            </children></HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="728.0" layoutY="44.0" prefHeight="34.0" prefWidth="121.0" spacing="10.0" styleClass="navigation-pill">
+                            <children>
+                                <Pane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <Button fx:id="settingsNavBtn" layoutX="-11.0" mnemonicParsing="false" onAction="#handleSettingsNavClick" prefHeight="26.0" prefWidth="113.0" style="-fx-background-color: trsnsparent;" text="       SETTINGS" textFill="WHITE" />
+                                        <ImageView fitHeight="24.0" fitWidth="21.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/Frame.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                        <Button fx:id="profileBtn" layoutX="-65.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleProfileClick" prefHeight="46.0" prefWidth="291.0" text="Profile">
+                            <graphic>
+                                <ImageView fitHeight="36.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@image/Group%2084.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font size="22.0" />
+                            </font>
+                            <styleClass>
+                                <String fx:value="setting-default" />
+                                <String fx:value="setting" />
+                            </styleClass>
+                        </Button>
+                        <Button fx:id="privacyPolicyBtn" layoutY="210.0" mnemonicParsing="false" onAction="#handlePrivacyPolicyClick" prefHeight="46.0" prefWidth="226.0" text="Privacy Policy" textAlignment="RIGHT">
+                            <graphic>
+                                <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@image/Frame%20(6).png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font size="22.0" />
+                            </font>
+                            <styleClass>
+                                <String fx:value="setting-default" />
+                                <String fx:value="setting" />
+                            </styleClass>
+                        </Button>
+                        <Button fx:id="aboutUsBtn" layoutX="-37.0" layoutY="256.0" mnemonicParsing="false" onAction="#handleAboutUsClick" prefHeight="46.0" prefWidth="263.0" text="About Us">
+                            <graphic>
+                                <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@image/Frame%20(7).png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font size="22.0" />
+                            </font>
+                            <styleClass>
+                                <String fx:value="setting-default" />
+                                <String fx:value="setting" />
+                            </styleClass>
+                        </Button>
+                        <Button fx:id="logOutBtn" layoutX="-61.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleLogOutClick" prefHeight="46.0" prefWidth="288.0" text=" Log Out">
+                            <graphic>
+                                <ImageView fitHeight="31.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@image/Frame%20(8).png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font size="22.0" />
+                            </font>
+                            <styleClass>
+                                <String fx:value="setting-default" />
+                                <String fx:value="setting" />
+                            </styleClass>
+                        </Button>
+                        <HBox alignment="CENTER_LEFT" layoutX="861.0" layoutY="41.0" prefHeight="39.0" prefWidth="50.0" spacing="10.0" styleClass="navigation-notification">
+                            <children>
+                                <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@image/image%2091%20(1).png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </HBox>
                     </children>
                 </AnchorPane>
             </center>

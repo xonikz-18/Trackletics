@@ -11,7 +11,6 @@
             <left>
                 <AnchorPane prefHeight="554.0" prefWidth="948.0" BorderPane.alignment="CENTER">
                     <children>
-
                         <Label layoutX="548.0" layoutY="104.0" prefHeight="23.0" prefWidth="347.0" styleClass="sign-in-text" text="Name">
                             <font>
                                 <Font size="13.0" />

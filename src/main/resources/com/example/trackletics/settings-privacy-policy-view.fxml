@@ -80,7 +80,11 @@
                             <children>
                                 <Pane prefHeight="200.0" prefWidth="200.0">
                                     <children>
-                                        <Button fx:id="settingsNavBtn" layoutX="-11.0" mnemonicParsing="false" onAction="#handleSettingsNavClick" prefHeight="26.0" prefWidth="113.0" style="-fx-background-color: trsnsparent;" text="       SETTINGS" textFill="WHITE" />
+                                        <Button fx:id="settingsNavBtn" layoutX="-11.0" mnemonicParsing="false" onAction="#handleSettingsNavClick" prefHeight="26.0" prefWidth="113.0" text="       SETTINGS" textFill="WHITE">
+                                            <styleClass>
+                                                <String fx:value="setting-default" />
+                                                <String fx:value="nav-pill" />
+                                            </styleClass></Button>
                                         <ImageView fitHeight="24.0" fitWidth="21.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
                                                 <Image url="@image/Frame.png" />
